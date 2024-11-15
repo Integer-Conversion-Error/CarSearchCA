@@ -1,19 +1,26 @@
-#CarSearchKijijiAutos
-
 import requests
 from bs4 import BeautifulSoup
+from fake_useragent import UserAgent
 import time
+import random
 
 def fetch_listings(url):
     """
-    Fetches and parses car listings from Kijiji Autos.
+    Fetches and parses car listings from Kijiji Autos with a randomized user-agent and rate-limiting detection.
     """
+    ua = UserAgent()  # Initialize fake user-agent generator
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+        'User-Agent': ua.random  # Use a random user-agent for each request
     }
     
     response = requests.get(url, headers=headers)
     
+    # Check for rate-limiting
+    if response.status_code == 429:
+        print("Rate limit detected! Waiting before retrying...")
+        time.sleep(60)  # Wait for a minute before retrying
+        return fetch_listings(url)  # Retry fetching the same URL
+
     if response.status_code != 200:
         print(f"Failed to retrieve the page. Status code: {response.status_code}")
         return []
@@ -37,10 +44,10 @@ def fetch_listings(url):
 
 def scrape_kijiji_autos(base_url, pages=1, delay=3):
     """
-    Scrapes multiple pages of Kijiji Autos listings.
+    Scrapes multiple pages of Kijiji Autos listings with random delays and user-agents.
     :param base_url: URL of the Kijiji Autos listings.
     :param pages: Number of pages to scrape.
-    :param delay: Time (in seconds) to wait between page requests.
+    :param delay: Maximum time (in seconds) to wait between page requests.
     """
     all_results = []
 
@@ -49,7 +56,7 @@ def scrape_kijiji_autos(base_url, pages=1, delay=3):
         page_url = f"{base_url}?page={page}"  # Modify if pagination URL differs
         listings = fetch_listings(page_url)
         all_results.extend(listings)
-        time.sleep(delay)
+        time.sleep(random.uniform(1, delay))  # Random delay to mimic human behavior
 
     return all_results
 
