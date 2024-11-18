@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 import time
 import random
+import json
+
 
 def fetch_listings(url):
     """
@@ -26,6 +28,7 @@ def fetch_listings(url):
         return []
 
     soup = BeautifulSoup(response.text, 'html.parser')
+    print(response.text)
     listings = soup.find_all('div', class_='listing-item')  # Update tag and class as per website structure
 
     results = []
@@ -42,7 +45,59 @@ def fetch_listings(url):
 
     return results
 
-def scrape_kijiji_autos(base_url, pages=1, delay=3):
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from bs4 import BeautifulSoup
+import json
+import time
+
+def scroll_and_fetch_listings(url, scroll_pause_time=2, max_scrolls=5):
+    """
+    Scrolls the page to load more listings and extracts JSON data from the script tag.
+    """
+    # Set up the WebDriver (Replace with the path to your ChromeDriver)
+    driver = webdriver.Chrome(executable_path="C:\\Users\\togoo\\.vscode\\extensions\\ms-python.vscode-pylance-2024.11.2\\dist\\.cache\\local_indices\\a21729d13b1aa9525d79f20a18d1a4cfa56c16c517ddaf5a07cf10a6a6810f70\\chromedriver.json")
+    driver.get(url)
+
+    # Wait for the page to load
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.TAG_NAME, 'body'))
+    )
+
+    # Scroll down to load more listings
+    for _ in range(max_scrolls):
+        # Scroll to the bottom of the page
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(scroll_pause_time)  # Pause to let new content load
+
+    # Extract the page source after scrolling
+    page_source = driver.page_source
+    driver.quit()
+
+    # Parse the page source with BeautifulSoup
+    soup = BeautifulSoup(page_source, 'html.parser')
+    script_tags = soup.find_all('script', {'type': 'application/ld+json'})
+
+    # Extract listings from the relevant JSON script
+    for script in script_tags:
+        try:
+            json_data = json.loads(script.string)
+            if json_data.get('@type') == 'ItemList':
+                return json_data.get('itemListElement', [])
+        except (json.JSONDecodeError, KeyError):
+            continue
+
+    return []
+
+
+
+
+
+
+def scrape_kijiji_autos(base_url, pages=5, delay=3):
     """
     Scrapes multiple pages of Kijiji Autos listings with random delays and user-agents.
     :param base_url: URL of the Kijiji Autos listings.
@@ -61,14 +116,18 @@ def scrape_kijiji_autos(base_url, pages=1, delay=3):
     return all_results
 
 def main():
-    base_url = 'https://www.kijijiautos.ca/cars/'  # Replace with the correct URL for listings
-    pages_to_scrape = 2  # Number of pages to scrape
-    results = scrape_kijiji_autos(base_url, pages=pages_to_scrape)
+    url = 'https://www.kijijiautos.ca/cars/tesla/model-3/#ms=135%3B5&od=down&p=3000%3A35000&sb=rel'
+    listings = scroll_and_fetch_listings(url)
 
-    # Save or display results
-    if results:
-        for i, result in enumerate(results, start=1):
-            print(f"{i}. Title: {result['Title']}, Price: {result['Price']}, Link: {result['Link']}")
+    # Display results
+    if listings:
+        for i, listing in enumerate(listings, start=1):
+            print(f"Listing {i}:")
+            print(f"  Position: {listing.get('position', 'N/A')}")
+            print(f"  Name: {listing.get('name', 'N/A')}")
+            print(f"  Description: {listing.get('description', 'N/A')}")
+            print(f"  Image: {listing.get('image', 'N/A')}")
+            print("-" * 40)
     else:
         print("No listings found.")
 
