@@ -1,0 +1,2624 @@
+[1733712748.917][INFO]: Starting ChromeDriver 131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285}) on port 59528
+[1733712748.917][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1733712748.920][INFO]: ChromeDriver was started successfully on port 59528
+[1733712749.428][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--disable-webgl", "--disable-gpu", "--blink-settings=imagesEnabled=false", "--log-level=3", "--no-sandbox", "--disable-dev-shm-usage" ],
+            "excludeSwitches": [ "enable-automation" ],
+            "extensions": [  ],
+            "prefs": {
+               "profile.default_content_setting_values.notifications": 2,
+               "profile.managed_default_content_settings.images": 2,
+               "profile.managed_default_content_settings.stylesheets": 2
+            },
+            "useAutomationExtension": false
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1733712749.428][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1733712749.428][WARNING]: Deprecated chrome option is ignored: useAutomationExtension
+[1733712749.428][INFO]: Browser search. Trying... C:\Users\togoo\Desktop\Self Improvement\Coding Projects\CarSearchCA\chromedriver-win64\chrome.exe
+[1733712749.428][INFO]: Browser search. Trying... C:\Users\togoo\Desktop\Self Improvement\Coding Projects\CarSearchCA\chromedriver-win64\chrome.exe
+[1733712749.429][INFO]: Browser search. Trying... C:\Users\togoo\Desktop\Self Improvement\Coding Projects\CarSearchCA\chromedriver-win64\chromium.exe
+[1733712749.431][INFO]: Browser search. Trying... C:\Users\togoo\AppData\Local\Google\Chrome\Application\chrome.exe
+[1733712749.431][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
+[1733712749.431][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
+[1733712749.431][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1,
+         "notifications": 2
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "managed_default_content_settings": {
+         "images": 2,
+         "stylesheets": 2
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1733712749.431][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1733712749.432][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1733712749.432][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1733712749.433][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --blink-settings=imagesEnabled=false --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-dev-shm-usage --disable-gpu --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-webgl --enable-logging --log-level=3 --no-first-run --no-sandbox --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\togoo\AppData\Local\Temp\scoped_dir15988_547240361" data:,
+[1733712749.848][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1733712749.850][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "131.0.6778.109",
+      "chrome": {
+         "chromedriverVersion": "131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285})",
+         "userDataDir": "C:\\Users\\togoo\\AppData\\Local\\Temp\\scoped_dir15988_547240361"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:59536"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "c1bbf893be86b3086ad3de257a95fd2e"
+}
+[1733712749.851][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND Navigate {
+   "url": "https://www.autotrader.ca"
+}
+[1733712749.851][INFO]: Waiting for pending navigations...
+[1733712749.852][INFO]: Done waiting for pending navigations. Status: ok
+[1733712750.459][INFO]: Waiting for pending navigations...
+[1733712752.588][INFO]: Done waiting for pending navigations. Status: ok
+[1733712752.588][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE Navigate
+[1733712755.591][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND FindElement {
+   "using": "css selector",
+   "value": "[id=\"rfMakes\"]"
+}
+[1733712755.591][INFO]: Waiting for pending navigations...
+[1733712755.593][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.601][INFO]: Waiting for pending navigations...
+[1733712755.601][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.601][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.41"
+}
+[1733712755.602][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND FindChildElements {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.41",
+   "using": "tag name",
+   "value": "option"
+}
+[1733712755.602][INFO]: Waiting for pending navigations...
+[1733712755.602][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.612][INFO]: Waiting for pending navigations...
+[1733712755.613][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.613][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE FindChildElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.57"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.59"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.61"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.63"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.65"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.67"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.69"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.71"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.73"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.75"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.77"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.79"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.81"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.83"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.85"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.87"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.89"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.91"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.93"
+}, "..." ]
+[1733712755.614][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.57"
+}
+[1733712755.614][INFO]: Waiting for pending navigations...
+[1733712755.614][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.620][INFO]: Waiting for pending navigations...
+[1733712755.620][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.620][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Any Make"
+[1733712755.621][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.57"
+}
+[1733712755.621][INFO]: Waiting for pending navigations...
+[1733712755.621][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.624][INFO]: Waiting for pending navigations...
+[1733712755.624][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.624][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Any Make"
+[1733712755.625][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.59"
+}
+[1733712755.625][INFO]: Waiting for pending navigations...
+[1733712755.625][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.628][INFO]: Waiting for pending navigations...
+[1733712755.629][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.629][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Acura"
+[1733712755.629][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.59"
+}
+[1733712755.629][INFO]: Waiting for pending navigations...
+[1733712755.629][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.632][INFO]: Waiting for pending navigations...
+[1733712755.632][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.632][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Acura"
+[1733712755.633][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.61"
+}
+[1733712755.633][INFO]: Waiting for pending navigations...
+[1733712755.633][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.636][INFO]: Waiting for pending navigations...
+[1733712755.636][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.636][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Alfa Romeo"
+[1733712755.637][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.61"
+}
+[1733712755.637][INFO]: Waiting for pending navigations...
+[1733712755.637][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.641][INFO]: Waiting for pending navigations...
+[1733712755.641][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.641][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Alfa Romeo"
+[1733712755.641][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.63"
+}
+[1733712755.641][INFO]: Waiting for pending navigations...
+[1733712755.642][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.645][INFO]: Waiting for pending navigations...
+[1733712755.645][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.645][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Audi"
+[1733712755.646][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.63"
+}
+[1733712755.646][INFO]: Waiting for pending navigations...
+[1733712755.646][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.649][INFO]: Waiting for pending navigations...
+[1733712755.649][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.649][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Audi"
+[1733712755.650][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.65"
+}
+[1733712755.650][INFO]: Waiting for pending navigations...
+[1733712755.650][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.653][INFO]: Waiting for pending navigations...
+[1733712755.653][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.653][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "BMW"
+[1733712755.654][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.65"
+}
+[1733712755.654][INFO]: Waiting for pending navigations...
+[1733712755.654][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.657][INFO]: Waiting for pending navigations...
+[1733712755.657][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.657][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "BMW"
+[1733712755.658][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.67"
+}
+[1733712755.658][INFO]: Waiting for pending navigations...
+[1733712755.658][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.662][INFO]: Waiting for pending navigations...
+[1733712755.662][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.662][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Buick"
+[1733712755.663][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.67"
+}
+[1733712755.663][INFO]: Waiting for pending navigations...
+[1733712755.663][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.666][INFO]: Waiting for pending navigations...
+[1733712755.666][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.666][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Buick"
+[1733712755.667][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.69"
+}
+[1733712755.667][INFO]: Waiting for pending navigations...
+[1733712755.667][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.670][INFO]: Waiting for pending navigations...
+[1733712755.670][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.670][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Cadillac"
+[1733712755.671][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.69"
+}
+[1733712755.671][INFO]: Waiting for pending navigations...
+[1733712755.671][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.674][INFO]: Waiting for pending navigations...
+[1733712755.674][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.674][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Cadillac"
+[1733712755.675][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.71"
+}
+[1733712755.675][INFO]: Waiting for pending navigations...
+[1733712755.675][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.679][INFO]: Waiting for pending navigations...
+[1733712755.679][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.679][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Chevrolet"
+[1733712755.679][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.71"
+}
+[1733712755.679][INFO]: Waiting for pending navigations...
+[1733712755.680][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.683][INFO]: Waiting for pending navigations...
+[1733712755.683][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.683][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Chevrolet"
+[1733712755.683][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.73"
+}
+[1733712755.683][INFO]: Waiting for pending navigations...
+[1733712755.683][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.686][INFO]: Waiting for pending navigations...
+[1733712755.687][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.687][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Chrysler"
+[1733712755.687][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.73"
+}
+[1733712755.687][INFO]: Waiting for pending navigations...
+[1733712755.687][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.691][INFO]: Waiting for pending navigations...
+[1733712755.691][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.691][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Chrysler"
+[1733712755.692][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.75"
+}
+[1733712755.692][INFO]: Waiting for pending navigations...
+[1733712755.692][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.695][INFO]: Waiting for pending navigations...
+[1733712755.695][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.695][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Dodge or Ram"
+[1733712755.696][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.75"
+}
+[1733712755.696][INFO]: Waiting for pending navigations...
+[1733712755.697][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.700][INFO]: Waiting for pending navigations...
+[1733712755.700][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.700][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Dodge or Ram"
+[1733712755.701][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.77"
+}
+[1733712755.701][INFO]: Waiting for pending navigations...
+[1733712755.701][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.704][INFO]: Waiting for pending navigations...
+[1733712755.705][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.705][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Ferrari"
+[1733712755.705][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.77"
+}
+[1733712755.705][INFO]: Waiting for pending navigations...
+[1733712755.706][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.709][INFO]: Waiting for pending navigations...
+[1733712755.709][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.709][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Ferrari"
+[1733712755.709][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.79"
+}
+[1733712755.709][INFO]: Waiting for pending navigations...
+[1733712755.710][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.713][INFO]: Waiting for pending navigations...
+[1733712755.713][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.713][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Ford"
+[1733712755.713][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.79"
+}
+[1733712755.713][INFO]: Waiting for pending navigations...
+[1733712755.714][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.717][INFO]: Waiting for pending navigations...
+[1733712755.717][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.717][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Ford"
+[1733712755.717][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.81"
+}
+[1733712755.717][INFO]: Waiting for pending navigations...
+[1733712755.718][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.721][INFO]: Waiting for pending navigations...
+[1733712755.721][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.721][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "GMC"
+[1733712755.721][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.81"
+}
+[1733712755.721][INFO]: Waiting for pending navigations...
+[1733712755.721][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.724][INFO]: Waiting for pending navigations...
+[1733712755.725][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.725][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "GMC"
+[1733712755.725][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.83"
+}
+[1733712755.725][INFO]: Waiting for pending navigations...
+[1733712755.725][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.728][INFO]: Waiting for pending navigations...
+[1733712755.729][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.729][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Honda"
+[1733712755.729][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.83"
+}
+[1733712755.729][INFO]: Waiting for pending navigations...
+[1733712755.729][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.733][INFO]: Waiting for pending navigations...
+[1733712755.733][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.733][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Honda"
+[1733712755.733][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.85"
+}
+[1733712755.733][INFO]: Waiting for pending navigations...
+[1733712755.734][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.737][INFO]: Waiting for pending navigations...
+[1733712755.737][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.737][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Hyundai"
+[1733712755.737][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.85"
+}
+[1733712755.737][INFO]: Waiting for pending navigations...
+[1733712755.738][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.741][INFO]: Waiting for pending navigations...
+[1733712755.741][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.741][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Hyundai"
+[1733712755.742][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.87"
+}
+[1733712755.742][INFO]: Waiting for pending navigations...
+[1733712755.742][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.745][INFO]: Waiting for pending navigations...
+[1733712755.745][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.745][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Infiniti"
+[1733712755.746][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.87"
+}
+[1733712755.746][INFO]: Waiting for pending navigations...
+[1733712755.746][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.749][INFO]: Waiting for pending navigations...
+[1733712755.749][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.749][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Infiniti"
+[1733712755.750][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.89"
+}
+[1733712755.750][INFO]: Waiting for pending navigations...
+[1733712755.750][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.753][INFO]: Waiting for pending navigations...
+[1733712755.754][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.754][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Jaguar"
+[1733712755.754][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.89"
+}
+[1733712755.754][INFO]: Waiting for pending navigations...
+[1733712755.755][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.758][INFO]: Waiting for pending navigations...
+[1733712755.758][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.758][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Jaguar"
+[1733712755.759][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.91"
+}
+[1733712755.759][INFO]: Waiting for pending navigations...
+[1733712755.759][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.762][INFO]: Waiting for pending navigations...
+[1733712755.762][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.762][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Jeep"
+[1733712755.763][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.91"
+}
+[1733712755.763][INFO]: Waiting for pending navigations...
+[1733712755.763][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.766][INFO]: Waiting for pending navigations...
+[1733712755.766][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.766][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Jeep"
+[1733712755.766][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.93"
+}
+[1733712755.766][INFO]: Waiting for pending navigations...
+[1733712755.767][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.770][INFO]: Waiting for pending navigations...
+[1733712755.770][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.770][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Kia"
+[1733712755.770][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.93"
+}
+[1733712755.770][INFO]: Waiting for pending navigations...
+[1733712755.770][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.774][INFO]: Waiting for pending navigations...
+[1733712755.774][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.774][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Kia"
+[1733712755.775][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.95"
+}
+[1733712755.775][INFO]: Waiting for pending navigations...
+[1733712755.775][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.778][INFO]: Waiting for pending navigations...
+[1733712755.778][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.778][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lamborghini"
+[1733712755.779][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.95"
+}
+[1733712755.779][INFO]: Waiting for pending navigations...
+[1733712755.779][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.782][INFO]: Waiting for pending navigations...
+[1733712755.782][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.782][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lamborghini"
+[1733712755.783][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.97"
+}
+[1733712755.783][INFO]: Waiting for pending navigations...
+[1733712755.783][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.786][INFO]: Waiting for pending navigations...
+[1733712755.786][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.786][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Land Rover"
+[1733712755.787][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.97"
+}
+[1733712755.787][INFO]: Waiting for pending navigations...
+[1733712755.787][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.790][INFO]: Waiting for pending navigations...
+[1733712755.790][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.790][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Land Rover"
+[1733712755.791][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.99"
+}
+[1733712755.791][INFO]: Waiting for pending navigations...
+[1733712755.791][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.794][INFO]: Waiting for pending navigations...
+[1733712755.794][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.794][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lexus"
+[1733712755.795][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.99"
+}
+[1733712755.795][INFO]: Waiting for pending navigations...
+[1733712755.795][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.798][INFO]: Waiting for pending navigations...
+[1733712755.798][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.798][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lexus"
+[1733712755.799][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.101"
+}
+[1733712755.799][INFO]: Waiting for pending navigations...
+[1733712755.799][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.802][INFO]: Waiting for pending navigations...
+[1733712755.802][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.802][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lincoln"
+[1733712755.803][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.101"
+}
+[1733712755.803][INFO]: Waiting for pending navigations...
+[1733712755.803][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.806][INFO]: Waiting for pending navigations...
+[1733712755.807][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.807][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lincoln"
+[1733712755.807][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.103"
+}
+[1733712755.807][INFO]: Waiting for pending navigations...
+[1733712755.807][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.811][INFO]: Waiting for pending navigations...
+[1733712755.811][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.811][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Maserati"
+[1733712755.811][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.103"
+}
+[1733712755.811][INFO]: Waiting for pending navigations...
+[1733712755.812][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.815][INFO]: Waiting for pending navigations...
+[1733712755.815][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.815][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Maserati"
+[1733712755.815][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.105"
+}
+[1733712755.815][INFO]: Waiting for pending navigations...
+[1733712755.816][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.819][INFO]: Waiting for pending navigations...
+[1733712755.820][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.820][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mazda"
+[1733712755.820][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.105"
+}
+[1733712755.820][INFO]: Waiting for pending navigations...
+[1733712755.821][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.824][INFO]: Waiting for pending navigations...
+[1733712755.825][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.825][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mazda"
+[1733712755.825][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.107"
+}
+[1733712755.825][INFO]: Waiting for pending navigations...
+[1733712755.826][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.829][INFO]: Waiting for pending navigations...
+[1733712755.830][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.830][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mercedes-AMG"
+[1733712755.830][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.107"
+}
+[1733712755.830][INFO]: Waiting for pending navigations...
+[1733712755.831][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.834][INFO]: Waiting for pending navigations...
+[1733712755.835][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.835][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mercedes-AMG"
+[1733712755.835][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.109"
+}
+[1733712755.835][INFO]: Waiting for pending navigations...
+[1733712755.835][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.839][INFO]: Waiting for pending navigations...
+[1733712755.839][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.839][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mercedes-Benz"
+[1733712755.840][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.109"
+}
+[1733712755.840][INFO]: Waiting for pending navigations...
+[1733712755.840][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.844][INFO]: Waiting for pending navigations...
+[1733712755.844][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.844][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mercedes-Benz"
+[1733712755.845][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.111"
+}
+[1733712755.845][INFO]: Waiting for pending navigations...
+[1733712755.845][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.849][INFO]: Waiting for pending navigations...
+[1733712755.849][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.849][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "MINI"
+[1733712755.850][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.111"
+}
+[1733712755.850][INFO]: Waiting for pending navigations...
+[1733712755.850][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.853][INFO]: Waiting for pending navigations...
+[1733712755.854][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.854][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "MINI"
+[1733712755.854][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.113"
+}
+[1733712755.854][INFO]: Waiting for pending navigations...
+[1733712755.855][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.858][INFO]: Waiting for pending navigations...
+[1733712755.858][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.858][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mitsubishi"
+[1733712755.859][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.113"
+}
+[1733712755.859][INFO]: Waiting for pending navigations...
+[1733712755.859][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.862][INFO]: Waiting for pending navigations...
+[1733712755.863][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.863][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mitsubishi"
+[1733712755.863][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.115"
+}
+[1733712755.863][INFO]: Waiting for pending navigations...
+[1733712755.864][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.867][INFO]: Waiting for pending navigations...
+[1733712755.867][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.867][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Nissan"
+[1733712755.868][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.115"
+}
+[1733712755.868][INFO]: Waiting for pending navigations...
+[1733712755.868][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.871][INFO]: Waiting for pending navigations...
+[1733712755.872][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.872][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Nissan"
+[1733712755.872][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.117"
+}
+[1733712755.872][INFO]: Waiting for pending navigations...
+[1733712755.872][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.875][INFO]: Waiting for pending navigations...
+[1733712755.876][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.876][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Porsche"
+[1733712755.876][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.117"
+}
+[1733712755.876][INFO]: Waiting for pending navigations...
+[1733712755.877][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.880][INFO]: Waiting for pending navigations...
+[1733712755.881][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.881][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Porsche"
+[1733712755.881][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.119"
+}
+[1733712755.881][INFO]: Waiting for pending navigations...
+[1733712755.881][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.885][INFO]: Waiting for pending navigations...
+[1733712755.885][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.885][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Ram"
+[1733712755.885][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.119"
+}
+[1733712755.885][INFO]: Waiting for pending navigations...
+[1733712755.885][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.889][INFO]: Waiting for pending navigations...
+[1733712755.889][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.889][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Ram"
+[1733712755.889][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.121"
+}
+[1733712755.889][INFO]: Waiting for pending navigations...
+[1733712755.890][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.893][INFO]: Waiting for pending navigations...
+[1733712755.895][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.895][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Subaru"
+[1733712755.895][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.121"
+}
+[1733712755.895][INFO]: Waiting for pending navigations...
+[1733712755.896][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.900][INFO]: Waiting for pending navigations...
+[1733712755.900][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.900][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Subaru"
+[1733712755.900][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.123"
+}
+[1733712755.901][INFO]: Waiting for pending navigations...
+[1733712755.901][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.904][INFO]: Waiting for pending navigations...
+[1733712755.904][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.904][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Tesla"
+[1733712755.905][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.123"
+}
+[1733712755.905][INFO]: Waiting for pending navigations...
+[1733712755.905][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.908][INFO]: Waiting for pending navigations...
+[1733712755.908][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.908][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Tesla"
+[1733712755.909][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.125"
+}
+[1733712755.909][INFO]: Waiting for pending navigations...
+[1733712755.909][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.913][INFO]: Waiting for pending navigations...
+[1733712755.913][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.913][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Toyota"
+[1733712755.913][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.125"
+}
+[1733712755.913][INFO]: Waiting for pending navigations...
+[1733712755.914][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.917][INFO]: Waiting for pending navigations...
+[1733712755.917][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.917][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Toyota"
+[1733712755.918][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.127"
+}
+[1733712755.918][INFO]: Waiting for pending navigations...
+[1733712755.918][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.921][INFO]: Waiting for pending navigations...
+[1733712755.921][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.921][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Volkswagen"
+[1733712755.922][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.127"
+}
+[1733712755.922][INFO]: Waiting for pending navigations...
+[1733712755.922][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.925][INFO]: Waiting for pending navigations...
+[1733712755.925][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.925][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Volkswagen"
+[1733712755.926][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.129"
+}
+[1733712755.926][INFO]: Waiting for pending navigations...
+[1733712755.926][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.929][INFO]: Waiting for pending navigations...
+[1733712755.929][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.929][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Volvo"
+[1733712755.929][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.129"
+}
+[1733712755.929][INFO]: Waiting for pending navigations...
+[1733712755.930][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.933][INFO]: Waiting for pending navigations...
+[1733712755.933][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.933][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Volvo"
+[1733712755.933][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.131"
+}
+[1733712755.933][INFO]: Waiting for pending navigations...
+[1733712755.934][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.937][INFO]: Waiting for pending navigations...
+[1733712755.937][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.937][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "AC"
+[1733712755.937][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.131"
+}
+[1733712755.937][INFO]: Waiting for pending navigations...
+[1733712755.937][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.941][INFO]: Waiting for pending navigations...
+[1733712755.941][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.941][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "AC"
+[1733712755.941][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.133"
+}
+[1733712755.941][INFO]: Waiting for pending navigations...
+[1733712755.941][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.945][INFO]: Waiting for pending navigations...
+[1733712755.945][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.945][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Acadian"
+[1733712755.945][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.133"
+}
+[1733712755.945][INFO]: Waiting for pending navigations...
+[1733712755.945][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.948][INFO]: Waiting for pending navigations...
+[1733712755.949][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.949][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Acadian"
+[1733712755.949][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.135"
+}
+[1733712755.949][INFO]: Waiting for pending navigations...
+[1733712755.949][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.952][INFO]: Waiting for pending navigations...
+[1733712755.952][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.952][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Acura"
+[1733712755.953][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.135"
+}
+[1733712755.953][INFO]: Waiting for pending navigations...
+[1733712755.953][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.956][INFO]: Waiting for pending navigations...
+[1733712755.956][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.956][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Acura"
+[1733712755.957][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.137"
+}
+[1733712755.957][INFO]: Waiting for pending navigations...
+[1733712755.957][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.960][INFO]: Waiting for pending navigations...
+[1733712755.960][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.960][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Alfa Romeo"
+[1733712755.961][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.137"
+}
+[1733712755.961][INFO]: Waiting for pending navigations...
+[1733712755.961][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.965][INFO]: Waiting for pending navigations...
+[1733712755.965][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.965][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Alfa Romeo"
+[1733712755.965][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.139"
+}
+[1733712755.965][INFO]: Waiting for pending navigations...
+[1733712755.966][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.969][INFO]: Waiting for pending navigations...
+[1733712755.969][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.969][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "AM General"
+[1733712755.969][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.139"
+}
+[1733712755.969][INFO]: Waiting for pending navigations...
+[1733712755.970][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.973][INFO]: Waiting for pending navigations...
+[1733712755.973][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.973][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "AM General"
+[1733712755.973][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.141"
+}
+[1733712755.973][INFO]: Waiting for pending navigations...
+[1733712755.974][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.977][INFO]: Waiting for pending navigations...
+[1733712755.977][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.977][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "American Bantam"
+[1733712755.977][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.141"
+}
+[1733712755.977][INFO]: Waiting for pending navigations...
+[1733712755.978][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.981][INFO]: Waiting for pending navigations...
+[1733712755.981][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.981][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "American Bantam"
+[1733712755.981][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.143"
+}
+[1733712755.981][INFO]: Waiting for pending navigations...
+[1733712755.982][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.985][INFO]: Waiting for pending navigations...
+[1733712755.985][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.985][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "American Motors (AMC)"
+[1733712755.985][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.143"
+}
+[1733712755.985][INFO]: Waiting for pending navigations...
+[1733712755.986][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.989][INFO]: Waiting for pending navigations...
+[1733712755.989][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.989][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "American Motors (AMC)"
+[1733712755.989][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.145"
+}
+[1733712755.989][INFO]: Waiting for pending navigations...
+[1733712755.989][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.992][INFO]: Waiting for pending navigations...
+[1733712755.993][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.993][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Aston Martin"
+[1733712755.993][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.145"
+}
+[1733712755.993][INFO]: Waiting for pending navigations...
+[1733712755.993][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.997][INFO]: Waiting for pending navigations...
+[1733712755.997][INFO]: Done waiting for pending navigations. Status: ok
+[1733712755.997][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Aston Martin"
+[1733712755.997][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.147"
+}
+[1733712755.997][INFO]: Waiting for pending navigations...
+[1733712755.998][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.001][INFO]: Waiting for pending navigations...
+[1733712756.001][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.001][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Asuna"
+[1733712756.002][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.147"
+}
+[1733712756.002][INFO]: Waiting for pending navigations...
+[1733712756.002][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.005][INFO]: Waiting for pending navigations...
+[1733712756.005][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.005][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Asuna"
+[1733712756.005][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.149"
+}
+[1733712756.005][INFO]: Waiting for pending navigations...
+[1733712756.006][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.009][INFO]: Waiting for pending navigations...
+[1733712756.009][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.009][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Auburn"
+[1733712756.010][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.149"
+}
+[1733712756.010][INFO]: Waiting for pending navigations...
+[1733712756.010][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.013][INFO]: Waiting for pending navigations...
+[1733712756.013][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.013][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Auburn"
+[1733712756.014][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.151"
+}
+[1733712756.014][INFO]: Waiting for pending navigations...
+[1733712756.014][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.017][INFO]: Waiting for pending navigations...
+[1733712756.017][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.017][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Audi"
+[1733712756.018][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.151"
+}
+[1733712756.018][INFO]: Waiting for pending navigations...
+[1733712756.018][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.021][INFO]: Waiting for pending navigations...
+[1733712756.021][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.021][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Audi"
+[1733712756.022][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.153"
+}
+[1733712756.022][INFO]: Waiting for pending navigations...
+[1733712756.022][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.025][INFO]: Waiting for pending navigations...
+[1733712756.025][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.025][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Austin"
+[1733712756.026][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.153"
+}
+[1733712756.026][INFO]: Waiting for pending navigations...
+[1733712756.026][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.029][INFO]: Waiting for pending navigations...
+[1733712756.030][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.030][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Austin"
+[1733712756.031][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.155"
+}
+[1733712756.031][INFO]: Waiting for pending navigations...
+[1733712756.031][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.034][INFO]: Waiting for pending navigations...
+[1733712756.034][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.034][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Austin-Healey"
+[1733712756.035][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.155"
+}
+[1733712756.035][INFO]: Waiting for pending navigations...
+[1733712756.035][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.038][INFO]: Waiting for pending navigations...
+[1733712756.038][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.038][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Austin-Healey"
+[1733712756.039][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.157"
+}
+[1733712756.039][INFO]: Waiting for pending navigations...
+[1733712756.039][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.043][INFO]: Waiting for pending navigations...
+[1733712756.043][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.043][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Bentley"
+[1733712756.044][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.157"
+}
+[1733712756.044][INFO]: Waiting for pending navigations...
+[1733712756.044][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.047][INFO]: Waiting for pending navigations...
+[1733712756.047][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.047][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Bentley"
+[1733712756.048][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.159"
+}
+[1733712756.048][INFO]: Waiting for pending navigations...
+[1733712756.048][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.051][INFO]: Waiting for pending navigations...
+[1733712756.051][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.051][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "BMW"
+[1733712756.052][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.159"
+}
+[1733712756.052][INFO]: Waiting for pending navigations...
+[1733712756.052][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.055][INFO]: Waiting for pending navigations...
+[1733712756.055][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.055][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "BMW"
+[1733712756.056][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.161"
+}
+[1733712756.056][INFO]: Waiting for pending navigations...
+[1733712756.056][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.059][INFO]: Waiting for pending navigations...
+[1733712756.059][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.059][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "BrightDrop"
+[1733712756.060][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.161"
+}
+[1733712756.060][INFO]: Waiting for pending navigations...
+[1733712756.060][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.063][INFO]: Waiting for pending navigations...
+[1733712756.063][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.063][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "BrightDrop"
+[1733712756.064][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.163"
+}
+[1733712756.064][INFO]: Waiting for pending navigations...
+[1733712756.064][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.067][INFO]: Waiting for pending navigations...
+[1733712756.067][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.067][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Bugatti"
+[1733712756.068][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.163"
+}
+[1733712756.068][INFO]: Waiting for pending navigations...
+[1733712756.068][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.071][INFO]: Waiting for pending navigations...
+[1733712756.072][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.072][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Bugatti"
+[1733712756.072][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.165"
+}
+[1733712756.072][INFO]: Waiting for pending navigations...
+[1733712756.072][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.075][INFO]: Waiting for pending navigations...
+[1733712756.076][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.076][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Buick"
+[1733712756.076][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.165"
+}
+[1733712756.076][INFO]: Waiting for pending navigations...
+[1733712756.077][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.079][INFO]: Waiting for pending navigations...
+[1733712756.080][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.080][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Buick"
+[1733712756.080][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.167"
+}
+[1733712756.080][INFO]: Waiting for pending navigations...
+[1733712756.080][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.083][INFO]: Waiting for pending navigations...
+[1733712756.084][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.084][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Cadillac"
+[1733712756.084][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.167"
+}
+[1733712756.084][INFO]: Waiting for pending navigations...
+[1733712756.084][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.087][INFO]: Waiting for pending navigations...
+[1733712756.087][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.087][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Cadillac"
+[1733712756.088][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.169"
+}
+[1733712756.088][INFO]: Waiting for pending navigations...
+[1733712756.088][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.091][INFO]: Waiting for pending navigations...
+[1733712756.091][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.091][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Chevrolet"
+[1733712756.092][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.169"
+}
+[1733712756.092][INFO]: Waiting for pending navigations...
+[1733712756.092][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.095][INFO]: Waiting for pending navigations...
+[1733712756.095][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.095][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Chevrolet"
+[1733712756.096][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.171"
+}
+[1733712756.096][INFO]: Waiting for pending navigations...
+[1733712756.096][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.099][INFO]: Waiting for pending navigations...
+[1733712756.099][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.099][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Chrysler"
+[1733712756.100][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.171"
+}
+[1733712756.100][INFO]: Waiting for pending navigations...
+[1733712756.100][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.103][INFO]: Waiting for pending navigations...
+[1733712756.103][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.103][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Chrysler"
+[1733712756.104][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.173"
+}
+[1733712756.104][INFO]: Waiting for pending navigations...
+[1733712756.104][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.107][INFO]: Waiting for pending navigations...
+[1733712756.107][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.107][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Citroen"
+[1733712756.108][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.173"
+}
+[1733712756.108][INFO]: Waiting for pending navigations...
+[1733712756.108][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.111][INFO]: Waiting for pending navigations...
+[1733712756.112][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.112][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Citroen"
+[1733712756.112][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.175"
+}
+[1733712756.112][INFO]: Waiting for pending navigations...
+[1733712756.112][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.115][INFO]: Waiting for pending navigations...
+[1733712756.116][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.116][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Daihatsu"
+[1733712756.116][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.175"
+}
+[1733712756.116][INFO]: Waiting for pending navigations...
+[1733712756.116][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.119][INFO]: Waiting for pending navigations...
+[1733712756.119][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.119][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Daihatsu"
+[1733712756.120][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.177"
+}
+[1733712756.120][INFO]: Waiting for pending navigations...
+[1733712756.120][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.123][INFO]: Waiting for pending navigations...
+[1733712756.123][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.123][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Daimler"
+[1733712756.124][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.177"
+}
+[1733712756.124][INFO]: Waiting for pending navigations...
+[1733712756.124][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.127][INFO]: Waiting for pending navigations...
+[1733712756.127][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.127][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Daimler"
+[1733712756.128][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.179"
+}
+[1733712756.128][INFO]: Waiting for pending navigations...
+[1733712756.128][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.131][INFO]: Waiting for pending navigations...
+[1733712756.131][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.131][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Datsun"
+[1733712756.132][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.179"
+}
+[1733712756.132][INFO]: Waiting for pending navigations...
+[1733712756.132][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.135][INFO]: Waiting for pending navigations...
+[1733712756.135][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.135][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Datsun"
+[1733712756.136][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.181"
+}
+[1733712756.136][INFO]: Waiting for pending navigations...
+[1733712756.136][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.139][INFO]: Waiting for pending navigations...
+[1733712756.139][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.139][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "De Soto"
+[1733712756.140][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.181"
+}
+[1733712756.140][INFO]: Waiting for pending navigations...
+[1733712756.140][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.143][INFO]: Waiting for pending navigations...
+[1733712756.143][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.143][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "De Soto"
+[1733712756.144][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.183"
+}
+[1733712756.144][INFO]: Waiting for pending navigations...
+[1733712756.144][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.147][INFO]: Waiting for pending navigations...
+[1733712756.147][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.147][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "De Tomaso"
+[1733712756.147][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.183"
+}
+[1733712756.148][INFO]: Waiting for pending navigations...
+[1733712756.148][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.151][INFO]: Waiting for pending navigations...
+[1733712756.151][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.151][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "De Tomaso"
+[1733712756.152][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.185"
+}
+[1733712756.152][INFO]: Waiting for pending navigations...
+[1733712756.152][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.155][INFO]: Waiting for pending navigations...
+[1733712756.155][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.155][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Dodge"
+[1733712756.156][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.185"
+}
+[1733712756.156][INFO]: Waiting for pending navigations...
+[1733712756.156][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.159][INFO]: Waiting for pending navigations...
+[1733712756.159][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.159][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Dodge"
+[1733712756.160][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.187"
+}
+[1733712756.160][INFO]: Waiting for pending navigations...
+[1733712756.160][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.163][INFO]: Waiting for pending navigations...
+[1733712756.163][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.164][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Dodge or Ram"
+[1733712756.164][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.187"
+}
+[1733712756.164][INFO]: Waiting for pending navigations...
+[1733712756.164][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.168][INFO]: Waiting for pending navigations...
+[1733712756.168][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.168][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Dodge or Ram"
+[1733712756.168][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.189"
+}
+[1733712756.168][INFO]: Waiting for pending navigations...
+[1733712756.169][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.172][INFO]: Waiting for pending navigations...
+[1733712756.172][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.172][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Eagle"
+[1733712756.172][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.189"
+}
+[1733712756.172][INFO]: Waiting for pending navigations...
+[1733712756.173][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.176][INFO]: Waiting for pending navigations...
+[1733712756.176][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.176][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Eagle"
+[1733712756.176][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.191"
+}
+[1733712756.176][INFO]: Waiting for pending navigations...
+[1733712756.176][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.180][INFO]: Waiting for pending navigations...
+[1733712756.181][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.181][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Edsel"
+[1733712756.181][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.191"
+}
+[1733712756.181][INFO]: Waiting for pending navigations...
+[1733712756.181][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.185][INFO]: Waiting for pending navigations...
+[1733712756.185][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.185][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Edsel"
+[1733712756.186][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.193"
+}
+[1733712756.186][INFO]: Waiting for pending navigations...
+[1733712756.186][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.189][INFO]: Waiting for pending navigations...
+[1733712756.189][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.189][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Essex"
+[1733712756.190][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.193"
+}
+[1733712756.190][INFO]: Waiting for pending navigations...
+[1733712756.190][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.193][INFO]: Waiting for pending navigations...
+[1733712756.194][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.194][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Essex"
+[1733712756.194][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.195"
+}
+[1733712756.194][INFO]: Waiting for pending navigations...
+[1733712756.194][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.197][INFO]: Waiting for pending navigations...
+[1733712756.197][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.197][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Excalibur"
+[1733712756.198][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.195"
+}
+[1733712756.198][INFO]: Waiting for pending navigations...
+[1733712756.198][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.201][INFO]: Waiting for pending navigations...
+[1733712756.201][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.201][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Excalibur"
+[1733712756.202][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.197"
+}
+[1733712756.202][INFO]: Waiting for pending navigations...
+[1733712756.202][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.205][INFO]: Waiting for pending navigations...
+[1733712756.205][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.205][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Factory Five Racing"
+[1733712756.206][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.197"
+}
+[1733712756.206][INFO]: Waiting for pending navigations...
+[1733712756.206][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.209][INFO]: Waiting for pending navigations...
+[1733712756.209][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.209][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Factory Five Racing"
+[1733712756.210][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.199"
+}
+[1733712756.210][INFO]: Waiting for pending navigations...
+[1733712756.210][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.213][INFO]: Waiting for pending navigations...
+[1733712756.213][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.213][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Fargo"
+[1733712756.214][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.199"
+}
+[1733712756.214][INFO]: Waiting for pending navigations...
+[1733712756.214][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.217][INFO]: Waiting for pending navigations...
+[1733712756.217][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.217][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Fargo"
+[1733712756.218][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.201"
+}
+[1733712756.218][INFO]: Waiting for pending navigations...
+[1733712756.218][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.221][INFO]: Waiting for pending navigations...
+[1733712756.221][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.221][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Ferrari"
+[1733712756.222][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.201"
+}
+[1733712756.222][INFO]: Waiting for pending navigations...
+[1733712756.222][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.225][INFO]: Waiting for pending navigations...
+[1733712756.225][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.225][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Ferrari"
+[1733712756.226][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.203"
+}
+[1733712756.226][INFO]: Waiting for pending navigations...
+[1733712756.226][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.229][INFO]: Waiting for pending navigations...
+[1733712756.229][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.229][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Fiat"
+[1733712756.230][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.203"
+}
+[1733712756.230][INFO]: Waiting for pending navigations...
+[1733712756.230][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.233][INFO]: Waiting for pending navigations...
+[1733712756.233][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.233][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Fiat"
+[1733712756.234][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.205"
+}
+[1733712756.234][INFO]: Waiting for pending navigations...
+[1733712756.234][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.237][INFO]: Waiting for pending navigations...
+[1733712756.237][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.237][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Fisker"
+[1733712756.238][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.205"
+}
+[1733712756.238][INFO]: Waiting for pending navigations...
+[1733712756.238][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.241][INFO]: Waiting for pending navigations...
+[1733712756.241][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.241][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Fisker"
+[1733712756.241][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.207"
+}
+[1733712756.241][INFO]: Waiting for pending navigations...
+[1733712756.242][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.245][INFO]: Waiting for pending navigations...
+[1733712756.245][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.245][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Ford"
+[1733712756.245][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.207"
+}
+[1733712756.245][INFO]: Waiting for pending navigations...
+[1733712756.246][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.249][INFO]: Waiting for pending navigations...
+[1733712756.249][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.249][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Ford"
+[1733712756.249][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.209"
+}
+[1733712756.249][INFO]: Waiting for pending navigations...
+[1733712756.250][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.252][INFO]: Waiting for pending navigations...
+[1733712756.253][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.253][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Freightliner"
+[1733712756.253][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.209"
+}
+[1733712756.253][INFO]: Waiting for pending navigations...
+[1733712756.254][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.257][INFO]: Waiting for pending navigations...
+[1733712756.257][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.257][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Freightliner"
+[1733712756.258][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.211"
+}
+[1733712756.258][INFO]: Waiting for pending navigations...
+[1733712756.258][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.261][INFO]: Waiting for pending navigations...
+[1733712756.261][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.261][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Genesis"
+[1733712756.262][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.211"
+}
+[1733712756.262][INFO]: Waiting for pending navigations...
+[1733712756.262][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.265][INFO]: Waiting for pending navigations...
+[1733712756.265][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.265][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Genesis"
+[1733712756.265][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.213"
+}
+[1733712756.265][INFO]: Waiting for pending navigations...
+[1733712756.266][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.269][INFO]: Waiting for pending navigations...
+[1733712756.269][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.269][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Geo"
+[1733712756.269][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.213"
+}
+[1733712756.269][INFO]: Waiting for pending navigations...
+[1733712756.270][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.273][INFO]: Waiting for pending navigations...
+[1733712756.273][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.273][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Geo"
+[1733712756.273][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.215"
+}
+[1733712756.273][INFO]: Waiting for pending navigations...
+[1733712756.274][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.277][INFO]: Waiting for pending navigations...
+[1733712756.277][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.277][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "GMC"
+[1733712756.277][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.215"
+}
+[1733712756.277][INFO]: Waiting for pending navigations...
+[1733712756.277][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.280][INFO]: Waiting for pending navigations...
+[1733712756.281][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.281][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "GMC"
+[1733712756.281][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.217"
+}
+[1733712756.281][INFO]: Waiting for pending navigations...
+[1733712756.281][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.284][INFO]: Waiting for pending navigations...
+[1733712756.285][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.285][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Hino"
+[1733712756.285][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.217"
+}
+[1733712756.285][INFO]: Waiting for pending navigations...
+[1733712756.285][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.288][INFO]: Waiting for pending navigations...
+[1733712756.289][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.289][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Hino"
+[1733712756.289][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.219"
+}
+[1733712756.289][INFO]: Waiting for pending navigations...
+[1733712756.289][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.293][INFO]: Waiting for pending navigations...
+[1733712756.293][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.293][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Holden"
+[1733712756.293][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.219"
+}
+[1733712756.293][INFO]: Waiting for pending navigations...
+[1733712756.293][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.297][INFO]: Waiting for pending navigations...
+[1733712756.297][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.297][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Holden"
+[1733712756.297][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.221"
+}
+[1733712756.297][INFO]: Waiting for pending navigations...
+[1733712756.298][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.301][INFO]: Waiting for pending navigations...
+[1733712756.301][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.301][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Honda"
+[1733712756.301][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.221"
+}
+[1733712756.301][INFO]: Waiting for pending navigations...
+[1733712756.302][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.304][INFO]: Waiting for pending navigations...
+[1733712756.305][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.305][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Honda"
+[1733712756.305][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.223"
+}
+[1733712756.305][INFO]: Waiting for pending navigations...
+[1733712756.305][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.308][INFO]: Waiting for pending navigations...
+[1733712756.309][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.309][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Hummer"
+[1733712756.309][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.223"
+}
+[1733712756.309][INFO]: Waiting for pending navigations...
+[1733712756.309][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.312][INFO]: Waiting for pending navigations...
+[1733712756.313][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.313][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Hummer"
+[1733712756.313][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.225"
+}
+[1733712756.313][INFO]: Waiting for pending navigations...
+[1733712756.313][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.317][INFO]: Waiting for pending navigations...
+[1733712756.317][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.317][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Hyundai"
+[1733712756.317][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.225"
+}
+[1733712756.317][INFO]: Waiting for pending navigations...
+[1733712756.318][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.321][INFO]: Waiting for pending navigations...
+[1733712756.322][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.322][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Hyundai"
+[1733712756.323][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.227"
+}
+[1733712756.323][INFO]: Waiting for pending navigations...
+[1733712756.323][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.326][INFO]: Waiting for pending navigations...
+[1733712756.327][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.327][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "INEOS"
+[1733712756.328][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.227"
+}
+[1733712756.328][INFO]: Waiting for pending navigations...
+[1733712756.328][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.332][INFO]: Waiting for pending navigations...
+[1733712756.332][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.332][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "INEOS"
+[1733712756.333][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.229"
+}
+[1733712756.333][INFO]: Waiting for pending navigations...
+[1733712756.333][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.337][INFO]: Waiting for pending navigations...
+[1733712756.338][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.338][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Infiniti"
+[1733712756.338][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.229"
+}
+[1733712756.338][INFO]: Waiting for pending navigations...
+[1733712756.339][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.343][INFO]: Waiting for pending navigations...
+[1733712756.343][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.343][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Infiniti"
+[1733712756.344][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.231"
+}
+[1733712756.344][INFO]: Waiting for pending navigations...
+[1733712756.344][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.348][INFO]: Waiting for pending navigations...
+[1733712756.348][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.348][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Intermeccanica"
+[1733712756.349][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.231"
+}
+[1733712756.349][INFO]: Waiting for pending navigations...
+[1733712756.349][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.352][INFO]: Waiting for pending navigations...
+[1733712756.352][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.352][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Intermeccanica"
+[1733712756.353][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.233"
+}
+[1733712756.353][INFO]: Waiting for pending navigations...
+[1733712756.353][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.356][INFO]: Waiting for pending navigations...
+[1733712756.356][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.356][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "International"
+[1733712756.357][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.233"
+}
+[1733712756.357][INFO]: Waiting for pending navigations...
+[1733712756.357][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.360][INFO]: Waiting for pending navigations...
+[1733712756.361][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.361][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "International"
+[1733712756.361][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.235"
+}
+[1733712756.361][INFO]: Waiting for pending navigations...
+[1733712756.361][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.365][INFO]: Waiting for pending navigations...
+[1733712756.365][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.365][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Isuzu"
+[1733712756.366][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.235"
+}
+[1733712756.366][INFO]: Waiting for pending navigations...
+[1733712756.366][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.369][INFO]: Waiting for pending navigations...
+[1733712756.370][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.370][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Isuzu"
+[1733712756.370][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.237"
+}
+[1733712756.370][INFO]: Waiting for pending navigations...
+[1733712756.371][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.375][INFO]: Waiting for pending navigations...
+[1733712756.375][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.375][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Jaguar"
+[1733712756.376][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.237"
+}
+[1733712756.376][INFO]: Waiting for pending navigations...
+[1733712756.376][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.380][INFO]: Waiting for pending navigations...
+[1733712756.380][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.380][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Jaguar"
+[1733712756.381][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.239"
+}
+[1733712756.381][INFO]: Waiting for pending navigations...
+[1733712756.381][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.384][INFO]: Waiting for pending navigations...
+[1733712756.385][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.385][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Jeep"
+[1733712756.385][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.239"
+}
+[1733712756.385][INFO]: Waiting for pending navigations...
+[1733712756.386][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.390][INFO]: Waiting for pending navigations...
+[1733712756.390][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.390][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Jeep"
+[1733712756.391][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.241"
+}
+[1733712756.391][INFO]: Waiting for pending navigations...
+[1733712756.391][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.396][INFO]: Waiting for pending navigations...
+[1733712756.396][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.396][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Jensen"
+[1733712756.397][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.241"
+}
+[1733712756.397][INFO]: Waiting for pending navigations...
+[1733712756.397][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.401][INFO]: Waiting for pending navigations...
+[1733712756.401][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.401][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Jensen"
+[1733712756.402][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.243"
+}
+[1733712756.402][INFO]: Waiting for pending navigations...
+[1733712756.402][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.405][INFO]: Waiting for pending navigations...
+[1733712756.406][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.406][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Karma"
+[1733712756.406][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.243"
+}
+[1733712756.406][INFO]: Waiting for pending navigations...
+[1733712756.406][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.410][INFO]: Waiting for pending navigations...
+[1733712756.410][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.410][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Karma"
+[1733712756.411][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.245"
+}
+[1733712756.411][INFO]: Waiting for pending navigations...
+[1733712756.411][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.415][INFO]: Waiting for pending navigations...
+[1733712756.415][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.415][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Kia"
+[1733712756.416][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.245"
+}
+[1733712756.416][INFO]: Waiting for pending navigations...
+[1733712756.416][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.419][INFO]: Waiting for pending navigations...
+[1733712756.419][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.419][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Kia"
+[1733712756.420][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.247"
+}
+[1733712756.420][INFO]: Waiting for pending navigations...
+[1733712756.420][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.423][INFO]: Waiting for pending navigations...
+[1733712756.423][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.423][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lamborghini"
+[1733712756.424][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.247"
+}
+[1733712756.424][INFO]: Waiting for pending navigations...
+[1733712756.424][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.427][INFO]: Waiting for pending navigations...
+[1733712756.427][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.427][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lamborghini"
+[1733712756.428][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.249"
+}
+[1733712756.428][INFO]: Waiting for pending navigations...
+[1733712756.428][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.431][INFO]: Waiting for pending navigations...
+[1733712756.431][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.431][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lancia"
+[1733712756.432][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.249"
+}
+[1733712756.432][INFO]: Waiting for pending navigations...
+[1733712756.432][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.435][INFO]: Waiting for pending navigations...
+[1733712756.435][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.435][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lancia"
+[1733712756.436][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.251"
+}
+[1733712756.436][INFO]: Waiting for pending navigations...
+[1733712756.436][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.439][INFO]: Waiting for pending navigations...
+[1733712756.440][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.440][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Land Rover"
+[1733712756.440][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.251"
+}
+[1733712756.440][INFO]: Waiting for pending navigations...
+[1733712756.440][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.443][INFO]: Waiting for pending navigations...
+[1733712756.444][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.444][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Land Rover"
+[1733712756.444][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.253"
+}
+[1733712756.444][INFO]: Waiting for pending navigations...
+[1733712756.444][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.447][INFO]: Waiting for pending navigations...
+[1733712756.447][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.447][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lexus"
+[1733712756.448][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.253"
+}
+[1733712756.448][INFO]: Waiting for pending navigations...
+[1733712756.448][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.451][INFO]: Waiting for pending navigations...
+[1733712756.451][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.451][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lexus"
+[1733712756.452][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.255"
+}
+[1733712756.452][INFO]: Waiting for pending navigations...
+[1733712756.452][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.455][INFO]: Waiting for pending navigations...
+[1733712756.455][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.455][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lincoln"
+[1733712756.456][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.255"
+}
+[1733712756.456][INFO]: Waiting for pending navigations...
+[1733712756.456][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.459][INFO]: Waiting for pending navigations...
+[1733712756.459][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.459][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lincoln"
+[1733712756.460][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.257"
+}
+[1733712756.460][INFO]: Waiting for pending navigations...
+[1733712756.460][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.463][INFO]: Waiting for pending navigations...
+[1733712756.463][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.463][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lotus"
+[1733712756.464][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.257"
+}
+[1733712756.464][INFO]: Waiting for pending navigations...
+[1733712756.464][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.467][INFO]: Waiting for pending navigations...
+[1733712756.467][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.467][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lotus"
+[1733712756.467][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.259"
+}
+[1733712756.467][INFO]: Waiting for pending navigations...
+[1733712756.468][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.471][INFO]: Waiting for pending navigations...
+[1733712756.471][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.471][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lucid"
+[1733712756.471][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.259"
+}
+[1733712756.471][INFO]: Waiting for pending navigations...
+[1733712756.472][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.475][INFO]: Waiting for pending navigations...
+[1733712756.475][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.475][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Lucid"
+[1733712756.476][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.261"
+}
+[1733712756.476][INFO]: Waiting for pending navigations...
+[1733712756.476][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.479][INFO]: Waiting for pending navigations...
+[1733712756.480][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.480][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Maserati"
+[1733712756.480][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.261"
+}
+[1733712756.481][INFO]: Waiting for pending navigations...
+[1733712756.481][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.484][INFO]: Waiting for pending navigations...
+[1733712756.484][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.484][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Maserati"
+[1733712756.485][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.263"
+}
+[1733712756.485][INFO]: Waiting for pending navigations...
+[1733712756.485][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.488][INFO]: Waiting for pending navigations...
+[1733712756.488][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.488][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Maybach"
+[1733712756.489][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.263"
+}
+[1733712756.489][INFO]: Waiting for pending navigations...
+[1733712756.489][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.492][INFO]: Waiting for pending navigations...
+[1733712756.492][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.492][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Maybach"
+[1733712756.492][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.265"
+}
+[1733712756.493][INFO]: Waiting for pending navigations...
+[1733712756.493][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.496][INFO]: Waiting for pending navigations...
+[1733712756.496][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.496][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mazda"
+[1733712756.496][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.265"
+}
+[1733712756.497][INFO]: Waiting for pending navigations...
+[1733712756.497][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.500][INFO]: Waiting for pending navigations...
+[1733712756.500][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.500][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mazda"
+[1733712756.501][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.267"
+}
+[1733712756.501][INFO]: Waiting for pending navigations...
+[1733712756.501][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.504][INFO]: Waiting for pending navigations...
+[1733712756.504][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.504][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "McLaren"
+[1733712756.505][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.267"
+}
+[1733712756.505][INFO]: Waiting for pending navigations...
+[1733712756.505][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.508][INFO]: Waiting for pending navigations...
+[1733712756.508][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.508][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "McLaren"
+[1733712756.509][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.269"
+}
+[1733712756.509][INFO]: Waiting for pending navigations...
+[1733712756.509][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.512][INFO]: Waiting for pending navigations...
+[1733712756.513][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.513][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mercedes-AMG"
+[1733712756.513][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.269"
+}
+[1733712756.513][INFO]: Waiting for pending navigations...
+[1733712756.513][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.516][INFO]: Waiting for pending navigations...
+[1733712756.516][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.516][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mercedes-AMG"
+[1733712756.517][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.271"
+}
+[1733712756.517][INFO]: Waiting for pending navigations...
+[1733712756.517][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.520][INFO]: Waiting for pending navigations...
+[1733712756.520][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.520][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mercedes-Benz"
+[1733712756.521][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.271"
+}
+[1733712756.521][INFO]: Waiting for pending navigations...
+[1733712756.521][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.524][INFO]: Waiting for pending navigations...
+[1733712756.524][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.524][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mercedes-Benz"
+[1733712756.524][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.273"
+}
+[1733712756.524][INFO]: Waiting for pending navigations...
+[1733712756.525][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.528][INFO]: Waiting for pending navigations...
+[1733712756.528][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.528][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mercedes-Maybach"
+[1733712756.529][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.273"
+}
+[1733712756.529][INFO]: Waiting for pending navigations...
+[1733712756.529][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.532][INFO]: Waiting for pending navigations...
+[1733712756.532][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.532][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mercedes-Maybach"
+[1733712756.533][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.275"
+}
+[1733712756.533][INFO]: Waiting for pending navigations...
+[1733712756.533][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.536][INFO]: Waiting for pending navigations...
+[1733712756.536][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.536][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mercury"
+[1733712756.537][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.275"
+}
+[1733712756.537][INFO]: Waiting for pending navigations...
+[1733712756.537][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.540][INFO]: Waiting for pending navigations...
+[1733712756.540][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.540][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mercury"
+[1733712756.541][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.277"
+}
+[1733712756.541][INFO]: Waiting for pending navigations...
+[1733712756.541][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.544][INFO]: Waiting for pending navigations...
+[1733712756.544][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.544][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Merkur"
+[1733712756.544][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.277"
+}
+[1733712756.544][INFO]: Waiting for pending navigations...
+[1733712756.545][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.548][INFO]: Waiting for pending navigations...
+[1733712756.548][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.548][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Merkur"
+[1733712756.548][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.279"
+}
+[1733712756.548][INFO]: Waiting for pending navigations...
+[1733712756.549][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.552][INFO]: Waiting for pending navigations...
+[1733712756.552][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.552][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "MG"
+[1733712756.552][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.279"
+}
+[1733712756.552][INFO]: Waiting for pending navigations...
+[1733712756.552][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.555][INFO]: Waiting for pending navigations...
+[1733712756.556][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.556][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "MG"
+[1733712756.556][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.281"
+}
+[1733712756.556][INFO]: Waiting for pending navigations...
+[1733712756.556][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.559][INFO]: Waiting for pending navigations...
+[1733712756.560][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.560][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "MINI"
+[1733712756.560][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.281"
+}
+[1733712756.560][INFO]: Waiting for pending navigations...
+[1733712756.560][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.563][INFO]: Waiting for pending navigations...
+[1733712756.563][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.564][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "MINI"
+[1733712756.564][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.283"
+}
+[1733712756.564][INFO]: Waiting for pending navigations...
+[1733712756.564][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.567][INFO]: Waiting for pending navigations...
+[1733712756.567][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.567][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mitsubishi"
+[1733712756.568][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.283"
+}
+[1733712756.568][INFO]: Waiting for pending navigations...
+[1733712756.568][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.572][INFO]: Waiting for pending navigations...
+[1733712756.572][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.572][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mitsubishi"
+[1733712756.572][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.285"
+}
+[1733712756.572][INFO]: Waiting for pending navigations...
+[1733712756.573][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.576][INFO]: Waiting for pending navigations...
+[1733712756.576][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.576][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mitsuoka"
+[1733712756.576][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.285"
+}
+[1733712756.576][INFO]: Waiting for pending navigations...
+[1733712756.577][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.580][INFO]: Waiting for pending navigations...
+[1733712756.580][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.580][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Mitsuoka"
+[1733712756.580][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.287"
+}
+[1733712756.581][INFO]: Waiting for pending navigations...
+[1733712756.581][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.584][INFO]: Waiting for pending navigations...
+[1733712756.584][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.584][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Morgan"
+[1733712756.584][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.287"
+}
+[1733712756.584][INFO]: Waiting for pending navigations...
+[1733712756.585][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.588][INFO]: Waiting for pending navigations...
+[1733712756.588][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.588][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Morgan"
+[1733712756.588][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.289"
+}
+[1733712756.588][INFO]: Waiting for pending navigations...
+[1733712756.589][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.591][INFO]: Waiting for pending navigations...
+[1733712756.592][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.592][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Nash"
+[1733712756.592][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.289"
+}
+[1733712756.592][INFO]: Waiting for pending navigations...
+[1733712756.593][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.596][INFO]: Waiting for pending navigations...
+[1733712756.596][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.596][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Nash"
+[1733712756.596][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.291"
+}
+[1733712756.596][INFO]: Waiting for pending navigations...
+[1733712756.597][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.600][INFO]: Waiting for pending navigations...
+[1733712756.600][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.600][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Nissan"
+[1733712756.600][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.291"
+}
+[1733712756.600][INFO]: Waiting for pending navigations...
+[1733712756.600][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.603][INFO]: Waiting for pending navigations...
+[1733712756.603][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.603][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Nissan"
+[1733712756.604][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.293"
+}
+[1733712756.604][INFO]: Waiting for pending navigations...
+[1733712756.604][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.607][INFO]: Waiting for pending navigations...
+[1733712756.607][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.607][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Oldsmobile"
+[1733712756.608][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.293"
+}
+[1733712756.608][INFO]: Waiting for pending navigations...
+[1733712756.608][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.611][INFO]: Waiting for pending navigations...
+[1733712756.611][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.611][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Oldsmobile"
+[1733712756.612][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.295"
+}
+[1733712756.612][INFO]: Waiting for pending navigations...
+[1733712756.612][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.615][INFO]: Waiting for pending navigations...
+[1733712756.615][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.615][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Opel"
+[1733712756.616][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.295"
+}
+[1733712756.616][INFO]: Waiting for pending navigations...
+[1733712756.616][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.619][INFO]: Waiting for pending navigations...
+[1733712756.620][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.620][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Opel"
+[1733712756.621][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.297"
+}
+[1733712756.621][INFO]: Waiting for pending navigations...
+[1733712756.621][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.624][INFO]: Waiting for pending navigations...
+[1733712756.624][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.624][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Peugeot"
+[1733712756.625][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.297"
+}
+[1733712756.625][INFO]: Waiting for pending navigations...
+[1733712756.625][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.628][INFO]: Waiting for pending navigations...
+[1733712756.628][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.628][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Peugeot"
+[1733712756.629][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.299"
+}
+[1733712756.629][INFO]: Waiting for pending navigations...
+[1733712756.629][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.632][INFO]: Waiting for pending navigations...
+[1733712756.632][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.632][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Plymouth"
+[1733712756.633][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.299"
+}
+[1733712756.633][INFO]: Waiting for pending navigations...
+[1733712756.633][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.636][INFO]: Waiting for pending navigations...
+[1733712756.636][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.636][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Plymouth"
+[1733712756.637][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.301"
+}
+[1733712756.637][INFO]: Waiting for pending navigations...
+[1733712756.637][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.640][INFO]: Waiting for pending navigations...
+[1733712756.641][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.641][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Polestar"
+[1733712756.641][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.301"
+}
+[1733712756.641][INFO]: Waiting for pending navigations...
+[1733712756.641][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.644][INFO]: Waiting for pending navigations...
+[1733712756.645][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.645][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Polestar"
+[1733712756.645][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.303"
+}
+[1733712756.645][INFO]: Waiting for pending navigations...
+[1733712756.645][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.648][INFO]: Waiting for pending navigations...
+[1733712756.649][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.649][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Pontiac"
+[1733712756.649][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.303"
+}
+[1733712756.649][INFO]: Waiting for pending navigations...
+[1733712756.649][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.653][INFO]: Waiting for pending navigations...
+[1733712756.653][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.653][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Pontiac"
+[1733712756.653][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.305"
+}
+[1733712756.653][INFO]: Waiting for pending navigations...
+[1733712756.653][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.656][INFO]: Waiting for pending navigations...
+[1733712756.656][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.656][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Porsche"
+[1733712756.657][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.305"
+}
+[1733712756.657][INFO]: Waiting for pending navigations...
+[1733712756.657][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.660][INFO]: Waiting for pending navigations...
+[1733712756.661][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.661][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Porsche"
+[1733712756.661][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.307"
+}
+[1733712756.661][INFO]: Waiting for pending navigations...
+[1733712756.661][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.664][INFO]: Waiting for pending navigations...
+[1733712756.664][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.664][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Ram"
+[1733712756.665][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.307"
+}
+[1733712756.665][INFO]: Waiting for pending navigations...
+[1733712756.665][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.668][INFO]: Waiting for pending navigations...
+[1733712756.668][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.668][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Ram"
+[1733712756.669][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.309"
+}
+[1733712756.669][INFO]: Waiting for pending navigations...
+[1733712756.669][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.672][INFO]: Waiting for pending navigations...
+[1733712756.672][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.672][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Rambler"
+[1733712756.673][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.309"
+}
+[1733712756.673][INFO]: Waiting for pending navigations...
+[1733712756.673][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.676][INFO]: Waiting for pending navigations...
+[1733712756.676][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.676][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Rambler"
+[1733712756.677][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.311"
+}
+[1733712756.677][INFO]: Waiting for pending navigations...
+[1733712756.677][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.680][INFO]: Waiting for pending navigations...
+[1733712756.680][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.680][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Renault"
+[1733712756.681][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.311"
+}
+[1733712756.681][INFO]: Waiting for pending navigations...
+[1733712756.681][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.684][INFO]: Waiting for pending navigations...
+[1733712756.684][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.684][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Renault"
+[1733712756.685][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.313"
+}
+[1733712756.685][INFO]: Waiting for pending navigations...
+[1733712756.685][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.688][INFO]: Waiting for pending navigations...
+[1733712756.688][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.688][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Rivian"
+[1733712756.689][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.313"
+}
+[1733712756.689][INFO]: Waiting for pending navigations...
+[1733712756.689][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.692][INFO]: Waiting for pending navigations...
+[1733712756.692][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.692][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Rivian"
+[1733712756.692][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.315"
+}
+[1733712756.692][INFO]: Waiting for pending navigations...
+[1733712756.693][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.696][INFO]: Waiting for pending navigations...
+[1733712756.696][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.696][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Rolls-Royce"
+[1733712756.696][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.315"
+}
+[1733712756.696][INFO]: Waiting for pending navigations...
+[1733712756.697][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.700][INFO]: Waiting for pending navigations...
+[1733712756.700][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.700][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Rolls-Royce"
+[1733712756.700][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.317"
+}
+[1733712756.700][INFO]: Waiting for pending navigations...
+[1733712756.700][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.703][INFO]: Waiting for pending navigations...
+[1733712756.704][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.704][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Rover"
+[1733712756.704][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.317"
+}
+[1733712756.704][INFO]: Waiting for pending navigations...
+[1733712756.704][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.707][INFO]: Waiting for pending navigations...
+[1733712756.708][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.708][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Rover"
+[1733712756.708][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.319"
+}
+[1733712756.708][INFO]: Waiting for pending navigations...
+[1733712756.708][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.712][INFO]: Waiting for pending navigations...
+[1733712756.712][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.712][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Saab"
+[1733712756.713][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.319"
+}
+[1733712756.713][INFO]: Waiting for pending navigations...
+[1733712756.713][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.717][INFO]: Waiting for pending navigations...
+[1733712756.717][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.717][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Saab"
+[1733712756.718][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.321"
+}
+[1733712756.718][INFO]: Waiting for pending navigations...
+[1733712756.718][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.721][INFO]: Waiting for pending navigations...
+[1733712756.722][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.722][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Saturn"
+[1733712756.723][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.321"
+}
+[1733712756.723][INFO]: Waiting for pending navigations...
+[1733712756.723][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.726][INFO]: Waiting for pending navigations...
+[1733712756.727][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.727][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Saturn"
+[1733712756.727][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.323"
+}
+[1733712756.727][INFO]: Waiting for pending navigations...
+[1733712756.727][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.731][INFO]: Waiting for pending navigations...
+[1733712756.731][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.731][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Scion"
+[1733712756.731][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.323"
+}
+[1733712756.731][INFO]: Waiting for pending navigations...
+[1733712756.731][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.734][INFO]: Waiting for pending navigations...
+[1733712756.735][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.735][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Scion"
+[1733712756.735][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.325"
+}
+[1733712756.735][INFO]: Waiting for pending navigations...
+[1733712756.735][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.738][INFO]: Waiting for pending navigations...
+[1733712756.738][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.738][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Seat"
+[1733712756.739][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.325"
+}
+[1733712756.739][INFO]: Waiting for pending navigations...
+[1733712756.739][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.742][INFO]: Waiting for pending navigations...
+[1733712756.742][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.742][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Seat"
+[1733712756.743][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.327"
+}
+[1733712756.743][INFO]: Waiting for pending navigations...
+[1733712756.743][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.746][INFO]: Waiting for pending navigations...
+[1733712756.746][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.746][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Shelby"
+[1733712756.747][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.327"
+}
+[1733712756.747][INFO]: Waiting for pending navigations...
+[1733712756.747][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.750][INFO]: Waiting for pending navigations...
+[1733712756.750][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.750][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Shelby"
+[1733712756.751][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.329"
+}
+[1733712756.751][INFO]: Waiting for pending navigations...
+[1733712756.751][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.754][INFO]: Waiting for pending navigations...
+[1733712756.754][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.754][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "smart"
+[1733712756.755][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.329"
+}
+[1733712756.755][INFO]: Waiting for pending navigations...
+[1733712756.755][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.758][INFO]: Waiting for pending navigations...
+[1733712756.758][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.758][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "smart"
+[1733712756.759][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.331"
+}
+[1733712756.759][INFO]: Waiting for pending navigations...
+[1733712756.759][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.762][INFO]: Waiting for pending navigations...
+[1733712756.764][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.764][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Sterling"
+[1733712756.765][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.331"
+}
+[1733712756.765][INFO]: Waiting for pending navigations...
+[1733712756.766][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.771][INFO]: Waiting for pending navigations...
+[1733712756.772][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.772][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Sterling"
+[1733712756.772][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.333"
+}
+[1733712756.772][INFO]: Waiting for pending navigations...
+[1733712756.773][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.784][INFO]: Waiting for pending navigations...
+[1733712756.785][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.785][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Studebaker"
+[1733712756.785][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.333"
+}
+[1733712756.786][INFO]: Waiting for pending navigations...
+[1733712756.786][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.790][INFO]: Waiting for pending navigations...
+[1733712756.790][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.790][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Studebaker"
+[1733712756.791][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.335"
+}
+[1733712756.791][INFO]: Waiting for pending navigations...
+[1733712756.791][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.795][INFO]: Waiting for pending navigations...
+[1733712756.796][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.796][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Subaru"
+[1733712756.796][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.335"
+}
+[1733712756.797][INFO]: Waiting for pending navigations...
+[1733712756.797][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.801][INFO]: Waiting for pending navigations...
+[1733712756.801][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.801][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Subaru"
+[1733712756.802][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.337"
+}
+[1733712756.802][INFO]: Waiting for pending navigations...
+[1733712756.802][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.808][INFO]: Waiting for pending navigations...
+[1733712756.809][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.809][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Sunbeam"
+[1733712756.810][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.337"
+}
+[1733712756.810][INFO]: Waiting for pending navigations...
+[1733712756.810][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.813][INFO]: Waiting for pending navigations...
+[1733712756.813][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.813][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Sunbeam"
+[1733712756.814][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.339"
+}
+[1733712756.814][INFO]: Waiting for pending navigations...
+[1733712756.814][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.817][INFO]: Waiting for pending navigations...
+[1733712756.818][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.818][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Suzuki"
+[1733712756.818][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.339"
+}
+[1733712756.818][INFO]: Waiting for pending navigations...
+[1733712756.818][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.821][INFO]: Waiting for pending navigations...
+[1733712756.822][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.822][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Suzuki"
+[1733712756.822][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.341"
+}
+[1733712756.822][INFO]: Waiting for pending navigations...
+[1733712756.822][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.826][INFO]: Waiting for pending navigations...
+[1733712756.826][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.826][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Tesla"
+[1733712756.826][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.341"
+}
+[1733712756.826][INFO]: Waiting for pending navigations...
+[1733712756.826][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.830][INFO]: Waiting for pending navigations...
+[1733712756.830][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.830][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Tesla"
+[1733712756.830][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.343"
+}
+[1733712756.830][INFO]: Waiting for pending navigations...
+[1733712756.831][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.835][INFO]: Waiting for pending navigations...
+[1733712756.835][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.835][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Toyota"
+[1733712756.836][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.343"
+}
+[1733712756.836][INFO]: Waiting for pending navigations...
+[1733712756.836][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.840][INFO]: Waiting for pending navigations...
+[1733712756.840][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.840][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Toyota"
+[1733712756.841][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.345"
+}
+[1733712756.841][INFO]: Waiting for pending navigations...
+[1733712756.841][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.845][INFO]: Waiting for pending navigations...
+[1733712756.846][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.846][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Triumph"
+[1733712756.846][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.345"
+}
+[1733712756.846][INFO]: Waiting for pending navigations...
+[1733712756.847][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.850][INFO]: Waiting for pending navigations...
+[1733712756.851][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.851][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Triumph"
+[1733712756.851][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.347"
+}
+[1733712756.851][INFO]: Waiting for pending navigations...
+[1733712756.852][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.855][INFO]: Waiting for pending navigations...
+[1733712756.855][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.855][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Volga"
+[1733712756.856][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.347"
+}
+[1733712756.856][INFO]: Waiting for pending navigations...
+[1733712756.856][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.860][INFO]: Waiting for pending navigations...
+[1733712756.860][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.860][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Volga"
+[1733712756.861][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.349"
+}
+[1733712756.861][INFO]: Waiting for pending navigations...
+[1733712756.861][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.864][INFO]: Waiting for pending navigations...
+[1733712756.865][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.865][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Volkswagen"
+[1733712756.865][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.349"
+}
+[1733712756.865][INFO]: Waiting for pending navigations...
+[1733712756.865][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.869][INFO]: Waiting for pending navigations...
+[1733712756.869][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.869][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Volkswagen"
+[1733712756.869][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.351"
+}
+[1733712756.869][INFO]: Waiting for pending navigations...
+[1733712756.869][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.872][INFO]: Waiting for pending navigations...
+[1733712756.873][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.873][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Volvo"
+[1733712756.873][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.351"
+}
+[1733712756.873][INFO]: Waiting for pending navigations...
+[1733712756.873][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.876][INFO]: Waiting for pending navigations...
+[1733712756.876][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.876][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Volvo"
+[1733712756.877][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.353"
+}
+[1733712756.877][INFO]: Waiting for pending navigations...
+[1733712756.877][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.880][INFO]: Waiting for pending navigations...
+[1733712756.881][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.881][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "VPG"
+[1733712756.881][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.353"
+}
+[1733712756.881][INFO]: Waiting for pending navigations...
+[1733712756.881][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.885][INFO]: Waiting for pending navigations...
+[1733712756.885][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.885][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "VPG"
+[1733712756.885][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.355"
+}
+[1733712756.885][INFO]: Waiting for pending navigations...
+[1733712756.886][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.889][INFO]: Waiting for pending navigations...
+[1733712756.889][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.889][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Willys"
+[1733712756.889][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.355"
+}
+[1733712756.889][INFO]: Waiting for pending navigations...
+[1733712756.890][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.893][INFO]: Waiting for pending navigations...
+[1733712756.893][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.893][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Willys"
+[1733712756.893][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.357"
+}
+[1733712756.893][INFO]: Waiting for pending navigations...
+[1733712756.894][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.897][INFO]: Waiting for pending navigations...
+[1733712756.897][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.897][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Yugo"
+[1733712756.898][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND GetElementText {
+   "id": "f.7F4EE6D0E3D8356826A7F3A1D5BC7973.d.92BAEEB1CF9C2B8CD00A15D82DAA807A.e.357"
+}
+[1733712756.898][INFO]: Waiting for pending navigations...
+[1733712756.898][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.901][INFO]: Waiting for pending navigations...
+[1733712756.901][INFO]: Done waiting for pending navigations. Status: ok
+[1733712756.901][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE GetElementText "Yugo"
+[1733712756.902][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] COMMAND Quit {
+}
+[1733712756.943][INFO]: [c1bbf893be86b3086ad3de257a95fd2e] RESPONSE Quit

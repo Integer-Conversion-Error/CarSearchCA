@@ -107,6 +107,19 @@ def update_csv_with_details(input_csv, output_csv, driver_path):
     driver = webdriver.Chrome(service=service, options=chrome_options)
     service = Service(driver_path)
     options = webdriver.ChromeOptions()
+    options.add_argument("--disable-webgl")
+    options.add_argument("--disable-gpu")  # Disable GPU for better compatibility
+    options.add_argument("--blink-settings=imagesEnabled=false") 
+    options.add_argument("--log-level=3")  # Fatal-only logs
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])  # Avoid "Controlled by automation" message
+    options.add_experimental_option("useAutomationExtension", False)
+    options.add_experimental_option("prefs", {
+        "profile.managed_default_content_settings.images": 2,  # Block images
+        "profile.default_content_setting_values.notifications": 2,  # Block notifications
+        "profile.managed_default_content_settings.stylesheets": 2,  # Block CSS
+    })
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     driver = webdriver.Chrome(service=service, options=options)
     totalrows = count_rows_in_csv(input_csv)
     with open(input_csv, mode='r', newline='', encoding='utf-8') as infile:
@@ -129,7 +142,7 @@ def update_csv_with_details(input_csv, output_csv, driver_path):
             print(f"Invalid or missing link for row: {row}")
             row.update({"Highlights": "N/A", "Specifications": "N/A", "Features": "N/A"})
         updated_rows.append(row)
-        time.sleep(2)
+        time.sleep(0.25)
         elapsed_time = time.time() - start_time
         sum_elapsed.append(elapsed_time)
         avgtime = 0
@@ -137,6 +150,7 @@ def update_csv_with_details(input_csv, output_csv, driver_path):
             avgtime += etime
         
         avgtime /= float(len(sum_elapsed))
+        print(f"Average Time: {avgtime:.4f} seconds")
         avgtime *= totalrows
         print(f"Elapsed time: {elapsed_time:.4f} seconds")
         convert_seconds_to_hms(avgtime)
@@ -164,5 +178,5 @@ def deep_search_main(input_csv = "Autotrader_Listings_Filtered.csv"):
     return output_csv
 
 
-if __name__ == "__main__":
-    deep_search_main()
+# if __name__ == "__main__":
+#     deep_search_main()

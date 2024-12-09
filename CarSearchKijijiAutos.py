@@ -1,3 +1,4 @@
+##from io import FileIO
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -7,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import csv
-import KeywordCleanup, CSVCleanup, Autotrader_DeepSearch,ShowCars
+import KeywordCleanup, CSVCleanup, Autotrader_DeepSearch,ShowCars,GetUserQuery
 
 def fetch_listings_from_page(driver, exclusions):
     """
@@ -58,7 +59,7 @@ def fetch_listings_from_page(driver, exclusions):
     return listings
 
 
-def scrape_autotrader_listings(url, exclusions, max_pages=5):
+def scrape_autotrader_listings(url, exclusions, max_pages=9999):
     """
     Scrapes up to max_pages listings from Autotrader while filtering out excluded keywords.
     """
@@ -106,18 +107,14 @@ def save_to_csv(listings, file_name):
 
 
 def main():
-    #make = input("Enter make of car: ") ##TODO: MAKE SEARCHES MORE DYNAMIC
-    #model = input("Enter model of car: ")
-    #priceMin = input("Enter min price: $")
-    #priceMax = input("Enter max price: $")
-    search_url = "https://www.autotrader.ca/cars/tesla/model%203/?rcp=15&rcs=0&srt=35&pRng=3000%2C35000&prx=-1&loc=Kanata%2C%20ON&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch"
-    #modified_url = "https://www.autotrader.ca/cars/{make}/{model}/?rcp=15&rcs=0&srt=35&pRng={priceMin}%2C{priceMax}&prx=-1&loc=Kanata%2C%20ON&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch"
-    print("Scraping listings from Autotrader.ca...")
+    search_url,max_pages,exclusions = GetUserQuery.main()
 
-    # Keywords to exclude from the listings
-    exclusions = ["Standard Range", "SR+", "Standard", "RWD"]
+    #modified_url = f"https://www.autotrader.ca/cars/{make}/{model}/?rcp=15&rcs=0&srt=35&pRng={price_min}%2C{price_max}&prx={max_distance}&loc=Kanata%2C%20ON&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch"
 
-    max_pages = 999
+    #search_url = modified_url##"https://www.autotrader.ca/cars/tesla/model%203/?rcp=15&rcs=0&srt=35&pRng=3000%2C35000&prx=-1&loc=Kanata%2C%20ON&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch"
+
+    print("Search URL: ",search_url)
+    print("Exclusion Keywords: ",exclusions)
     listings = scrape_autotrader_listings(search_url, exclusions, max_pages=max_pages)
 
     if listings:

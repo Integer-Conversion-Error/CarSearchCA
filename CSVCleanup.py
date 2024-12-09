@@ -58,5 +58,5 @@ def csvmain(input_filename = "Autotrader_Listings_Updated.csv"):  # Input file n
     return output_csv
 
 
-if __name__ == "__main__":
-    csvmain()
+# if __name__ == "__main__":
+#     csvmain()

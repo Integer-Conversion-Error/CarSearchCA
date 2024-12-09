@@ -102,6 +102,8 @@ def remove_duplicates_and_clean_trim(input_file, output_file):
                     print(f"DEBUG: Duplicate link found, skipping row: {row}")
 
     print(f"DEBUG: Processed file, removed duplicates, and standardized trims.")
+
+
 def keycleanup(keyword = "Performance",input_csv = "Autotrader_Listings_Updated.csv"):
     
 

@@ -38,5 +38,5 @@ def showcarsmain(csv_file_path = 'Autotrader_Listings_Filtered_Cleaned_DeepSearc
     open_links_from_csv(csv_file_path, link_column_name)
 
 
-if True:
-    showcarsmain()
+# if True:
+#     showcarsmain()

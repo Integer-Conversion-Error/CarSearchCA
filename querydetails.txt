@@ -1,0 +1,7 @@
+Make: Tesla
+Model: Model 3
+Price Min: $3000.00
+Price Max: $35000.00
+Max Pages: 5
+Distance: -1
+Keywords: Standard, SR+, Base
