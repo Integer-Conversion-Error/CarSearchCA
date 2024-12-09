@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from datetime import datetime
 import time
 import csv
 import KeywordCleanup, CSVCleanup, Autotrader_DeepSearch,ShowCars,GetUserQuery
@@ -65,6 +66,19 @@ def scrape_autotrader_listings(url, exclusions, max_pages=9999):
     """
     service = Service(executable_path=r"C:\\Users\\togoo\\Desktop\\Self Improvement\\Coding Projects\\CarSearchCA\\chromedriver-win64\\chromedriver.exe")
     options = webdriver.ChromeOptions()
+    options.add_argument("--disable-webgl")
+    options.add_argument("--disable-gpu")  # Disable GPU for better compatibility
+    options.add_argument("--blink-settings=imagesEnabled=false") 
+    options.add_argument("--log-level=3")  # Fatal-only logs
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])  # Avoid "Controlled by automation" message
+    options.add_experimental_option("useAutomationExtension", False)
+    options.add_experimental_option("prefs", {
+        "profile.managed_default_content_settings.images": 2,  # Block images
+        "profile.default_content_setting_values.notifications": 2,  # Block notifications
+        "profile.managed_default_content_settings.stylesheets": 2,  # Block CSS
+    })
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     driver = webdriver.Chrome(service=service, options=options)
 
     driver.get(url)
@@ -107,19 +121,20 @@ def save_to_csv(listings, file_name):
 
 
 def main():
-    search_url,max_pages,exclusions = GetUserQuery.main()
+    search_url,max_pages,exclusions,filters = GetUserQuery.main()
 
     #modified_url = f"https://www.autotrader.ca/cars/{make}/{model}/?rcp=15&rcs=0&srt=35&pRng={price_min}%2C{price_max}&prx={max_distance}&loc=Kanata%2C%20ON&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch"
 
     #search_url = modified_url##"https://www.autotrader.ca/cars/tesla/model%203/?rcp=15&rcs=0&srt=35&pRng=3000%2C35000&prx=-1&loc=Kanata%2C%20ON&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch"
 
-    print("Search URL: ",search_url)
-    print("Exclusion Keywords: ",exclusions)
+    # print("Search URL: ",search_url)
+    # print("Exclusion Keywords: ",exclusions)
     listings = scrape_autotrader_listings(search_url, exclusions, max_pages=max_pages)
-
+    datestr = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
     if listings:
         print(f"Found {len(listings)} listings. Saving to CSV...")
-        file_name = "Autotrader_Listings_Filtered.csv"
+        file_name = f"{filters['make']}_{filters['model']}/{filters['price_min']}-{filters['price_max']}_{filters['min_mileage']}-{filters['max_mileage']}_{filters['min_year']}-{filters['max_year']}.csv"
+        #TODO: Individual folders for each car, and reduce redundant CSV files. 
         save_to_csv(listings, file_name)
         print(f"Listings saved to {file_name}.")
         return file_name
@@ -128,7 +143,7 @@ def main():
         return ""
 
 if __name__ == "__main__":
-    keyword = "Performance"
+    keyword = str(input("Enter Keyword: "))
     filename = main()
     filename = CSVCleanup.csvmain(filename)
     filename = Autotrader_DeepSearch.deep_search_main(filename)

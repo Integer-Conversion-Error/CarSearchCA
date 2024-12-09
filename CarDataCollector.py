@@ -133,6 +133,12 @@ def get_models_from_autotrader(manufacturer, headless=True):
 #     #print(f"Models for {manufacturer}: {models}")
 
 
+def get_specs_from_api(make, model, trim, year):
+    #TODO: Add API implementation, either from Edmunds https://developer.edmunds.com/api-documentation/vehicle/spec_engine_and_transmission/v2/
+    #or https://github.com/rOpenGov/mpg or https://www.fueleconomy.gov/feg/ws/index.shtml
+    
+    return 0
+
 
 def extract_car_companies(html_content):
     """

@@ -1,7 +1,11 @@
-Make: Tesla
-Model: Model 3
-Price Min: $3000.00
-Price Max: $35000.00
-Max Pages: 5
+Make: Lexus
+Model: GS
+Price Min: $8000.00
+Price Max: $15000.00
+Max Pages: 999
 Distance: -1
-Keywords: Standard, SR+, Base
+Min Mileage: 5000
+Max Mileage: 150000
+Min Year: 2006
+Max Year: 2024
+Keywords: 330, 300

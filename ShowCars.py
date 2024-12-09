@@ -32,7 +32,7 @@ def open_links_from_csv(file_path, column_name = "Link"):
 
 # Example Usage
 # Provide the path to your CSV file and the column name containing the links
-def showcarsmain(csv_file_path = 'Autotrader_Listings_Filtered_Cleaned_DeepSearchPerformance.csv'):
+def showcarsmain(csv_file_path):
     # Replace with the path to your CSV file
     link_column_name = 'Link'  # Replace with the actual column name in your CSV
     open_links_from_csv(csv_file_path, link_column_name)
