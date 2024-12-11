@@ -49,7 +49,7 @@ def clean_csv(input_file, output_file):
 
 def csvmain(input_filename = "Autotrader_Listings_Updated.csv"):  # Input file name):
     
-    output_csv = input_filename.split(".")[0]+"_Cleaned.csv"  # Output file name
+    output_csv = input_filename # .split(".")[0]+"_Cleaned.csv"  # Output file name
 
     print("Cleaning CSV file...")
     clean_csv(input_filename, output_csv)

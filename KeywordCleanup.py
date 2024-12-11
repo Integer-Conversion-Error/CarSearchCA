@@ -50,28 +50,6 @@ def remove_duplicates_and_clean_trim(input_file, output_file):
     trim_pattern = re.compile(r'Trim:\s*([^;]+)')  # Regex to extract Trim value
     seen_links = set()  # Set to track unique links
     
-    # # Mapping of common trims to standardized values
-    # trim_replacements = {
-    #     "performance": "Performance",
-    #     "long range": "Long Range",
-    #     "standard range plus": "Standard Range Plus",
-    # }
-    
-    # # Function to clean and standardize trim values
-    # def clean_trim(trim, specifications):
-    #     trim_lower = trim.lower()
-    #     for key, replacement in trim_replacements.items():
-    #         if key in trim_lower:
-    #             return replacement
-        
-    #     # Handle cases where trim is not recognized
-    #     if "awd" in specifications.lower():
-    #         return "Long Range"
-    #     elif "rwd" in specifications.lower():
-    #         return "Standard Range Plus"
-    #     return trim  # If no match and no AWD/RWD, leave it as-is
-    
-    # Open the input CSV file
     with open(input_file, mode='r', newline='', encoding='utf-8') as infile:
         reader = csv.DictReader(infile)
         # Define new fieldnames with the added "Trim" column
@@ -108,10 +86,8 @@ def remove_duplicates_and_clean_trim(input_file, output_file):
 
 def keycleanup(keyword = "Performance",input_csv = "Autotrader_Listings_Updated.csv"):
     
-
     # Define input and output file paths
-    
-    output_csv = input_csv.split(".")[0]+"_"+keyword+".csv"
+    output_csv = input_csv#.split(".")[0]+"_"+keyword+".csv"
 
     # Run the function
     filter_rows_with_keyword_and_add_trim(input_csv, output_csv,keyword)

@@ -42,6 +42,19 @@ def read_query_file(file_path="querydetails.txt"):
         elif line.startswith("Keywords:"):
             keywords = [kw.strip() for kw in line.split(":", 1)[1].strip().split(",")]
 
+    allfilters = {
+    'make': make,                      # Car make
+    'model': model,                    # Car model
+    'price_min': price_min,            # Minimum price
+    'price_max': price_max,            # Maximum price
+    'max_pages': max_pages,            # Maximum number of pages to search
+    'max_distance': max_distance,      # Maximum distance for the search
+    'exclusions': keywords,          # Keywords to exclude
+    'min_mileage': min_mileage,        # Minimum mileage
+    'max_mileage': max_mileage,        # Maximum mileage
+    'min_year': min_year,              # Minimum year
+    'max_year': max_year               # Maximum year
+    }
     return make, model, price_min, price_max, max_pages, max_distance, keywords, min_mileage, max_mileage, min_year, max_year
 
 
@@ -186,6 +199,21 @@ def create_query_file():
 
         print("Query details successfully saved to 'querydetails.txt'.")
 
+        allfilters = {
+        'make': make,                      # Car make
+        'model': model,                    # Car model
+        'price_min': price_min,            # Minimum price
+        'price_max': price_max,            # Maximum price
+        'max_pages': max_pages,            # Maximum number of pages to search
+        'max_distance': max_distance,      # Maximum distance for the search
+        'exclusions': [],          # Keywords to exclude
+        'min_mileage': min_mileage,        # Minimum mileage
+        'max_mileage': max_mileage,        # Maximum mileage
+        'min_year': min_year,              # Minimum year
+        'max_year': max_year               # Maximum year
+        }
+
+
         return make, model, int(price_min), int(price_max), max_pages, max_distance, keywords, min_mileage, max_mileage, min_year, max_year
 
 
@@ -292,9 +320,9 @@ def main():
     modified_url = (
         f"https://www.autotrader.ca/cars/{make_encoded}/{model_encoded}/?"
         f"rcp=15&rcs=0&srt=35&"
+        f"yRng={min_year}%2C{max_year}&"  # Year range
         f"pRng={price_min}%2C{price_max}&"   # Price range
         f"oRng={min_mileage}%2C{max_mileage}&"  # Mileage range
-        f"yrRng={min_year}%2C{max_year}&"  # Year range
         f"prx={max_distance}&"             # Maximum distance
         f"loc=Kanata%2C%20ON&"
         f"hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch"

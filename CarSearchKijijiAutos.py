@@ -1,4 +1,5 @@
 ##from io import FileIO
+import os, shutil
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -32,8 +33,8 @@ def fetch_listings_from_page(driver, exclusions):
             title = title_element.text.strip() if title_element else "N/A"
 
             # Skip listings with excluded keywords
-            if any(keyword.lower() in title.lower() for keyword in exclusions):
-                continue
+            # if any(keyword.lower() in title.lower() for keyword in exclusions):
+            #     continue
 
             # Extract price
             price_element = wrapper.find('span', class_='price-amount')
@@ -99,7 +100,7 @@ def scrape_autotrader_listings(url, exclusions, max_pages=9999):
             )
             next_page_button.click()
             current_page += 1
-            time.sleep(3)  # Wait for the next page to load
+            time.sleep(6)  # Wait for the next page to load
         except Exception as e:
             print("No more pages found or error occurred:", e)
             break
@@ -108,7 +109,7 @@ def scrape_autotrader_listings(url, exclusions, max_pages=9999):
     return all_listings
 
 
-def save_to_csv(listings, file_name):
+def save_to_csv(listings, file_name, filedir = "null"):
     """
     Saves listings to a CSV file with the specified file name.
     """
@@ -118,6 +119,9 @@ def save_to_csv(listings, file_name):
         writer.writeheader()
         for listing in listings:
             writer.writerow(listing)
+    
+    if filedir != "null":
+        shutil.move(file_name,filedir)
 
 
 def main():
@@ -130,20 +134,29 @@ def main():
     # print("Search URL: ",search_url)
     # print("Exclusion Keywords: ",exclusions)
     listings = scrape_autotrader_listings(search_url, exclusions, max_pages=max_pages)
-    datestr = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+    datestr = datetime.now().strftime(f"%Y-%m-%d_%H-%M-%S")
     if listings:
         print(f"Found {len(listings)} listings. Saving to CSV...")
-        file_name = f"{filters['make']}_{filters['model']}/{filters['price_min']}-{filters['price_max']}_{filters['min_mileage']}-{filters['max_mileage']}_{filters['min_year']}-{filters['max_year']}.csv"
+        folder_name = f"{filters['make']}_{filters['model']}"
+        folder_path = str(os.path.join(os.getcwd(), folder_name))
+        file_name = f"{filters['price_min']}-{filters['price_max']}_{filters['min_mileage']}-{filters['max_mileage']}_{filters['min_year']}-{filters['max_year']}_{datestr}.csv"
+        # Step 2: Check if the folder exists
+        if not os.path.exists(folder_path):
+            os.makedirs(folder_path)
+            print(f"Folder '{folder_name}' created at: {folder_path}")
+        else:
+            print(f"Folder '{folder_name}' already exists. Files will be added to it.")
+        
         #TODO: Individual folders for each car, and reduce redundant CSV files. 
-        save_to_csv(listings, file_name)
+        save_to_csv(listings, file_name,folder_path)
         print(f"Listings saved to {file_name}.")
-        return file_name
+        return folder_path +"\\" + file_name
     else:
         print("No listings found.")
         return ""
 
 if __name__ == "__main__":
-    keyword = str(input("Enter Keyword: "))
+    keyword = "sport"#str(input("Enter Keyword: "))
     filename = main()
     filename = CSVCleanup.csvmain(filename)
     filename = Autotrader_DeepSearch.deep_search_main(filename)

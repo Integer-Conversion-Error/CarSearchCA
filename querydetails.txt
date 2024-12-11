@@ -1,11 +1,11 @@
-Make: Lexus
-Model: GS
+Make: Ford
+Model: Fusion
 Price Min: $8000.00
-Price Max: $15000.00
+Price Max: $18000.00
 Max Pages: 999
 Distance: -1
-Min Mileage: 5000
-Max Mileage: 150000
-Min Year: 2006
-Max Year: 2024
-Keywords: 330, 300
+Min Mileage: 0
+Max Mileage: 200000
+Min Year: 2017
+Max Year: 2019
+Keywords: Titanium, FWD, SE

@@ -169,7 +169,7 @@ def update_csv_with_details(input_csv, output_csv, driver_path):
 
 
 def deep_search_main(input_csv = "Autotrader_Listings_Filtered.csv"):
-    output_csv = input_csv.split(".")[0]+"_DeepSearch.csv"  # Output file name
+    output_csv = input_csv# .split(".")[0]+"_DeepSearch.csv"  # Output file name
     driver_path = r"C:\\Users\\togoo\\Desktop\\Self Improvement\\Coding Projects\\CarSearchCA\\chromedriver-win64\\chromedriver.exe"
     
     print("Updating CSV with additional details from links using WebDriver...")
