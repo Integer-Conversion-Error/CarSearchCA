@@ -1,5 +1,5 @@
 import json
-import re
+import re, AutotraderXHRTest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -9,7 +9,7 @@ import time
 
 # Function to fetch and parse JSON-LD content using Selenium
 def fetch_and_parse_json_ld():
-    url = "https://www.autotrader.ca/cars/tesla/model%203/?rcp=50&rcs=0&srt=35&pRng=3000%2C35000&prx=-1&loc=Kanata%2C%20ON&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch"
+    url = "https://www.autotrader.ca/cars/tesla/model%203/?rcp=15&rcs=0&srt=35&pRng=3000%2C35000&prx=-1&loc=Kanata%2C%20ON&hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch"
 
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
