@@ -54,6 +54,8 @@ def get_info_from_json(make="Ford", model="Fusion", url="https://www.autotrader.
         allspecs = allofspecs.get("specs", [])
         for spec in allspecs:
             carinfodict.update({spec["key"]: spec["value"]})
+
+        #print(carinfodict)
         return carinfodict
     else:
         print(f"Error fetching data from URL: {url}")
@@ -71,38 +73,47 @@ def process_csv(input_csv="results.csv", output_csv="results.csv"):
     Returns:
         None
     """
-    with open(input_csv, mode="r", encoding="utf-8") as infile, open(output_csv, mode="w", newline="", encoding="utf-8") as outfile:
-        reader = csv.reader(infile)
-        writer = csv.writer(outfile)
+    try:
+        with open(input_csv, mode="r", encoding="utf-8") as infile, open(output_csv, mode="w", newline="", encoding="utf-8") as outfile:
+            reader = csv.reader(infile)
+            writer = csv.writer(outfile)
 
-        # Read the header and add new columns
-        header = next(reader)
-        writer.writerow(header + ["Make", "Model", "Kilometres", "Status", "Trim", "Body Type", "Engine", "Cylinder", "Transmission", "Drivetrain", "Fuel Type"])
+            # Check if the input file is empty
+            try:
+                header = next(reader)
+            except StopIteration:
+                print(f"Error: {input_csv} is empty. No data to process.")
+                return
 
-        # Process each row
-        for row in reader:
-            url = row[0]  # Assuming the first column contains the link
-            print(f"Processing: {url}")
+            # Write the header with additional columns
+            writer.writerow(header + ["Make", "Model", "Kilometres", "Status", "Trim", "Body Type", "Engine", "Cylinder", "Transmission", "Drivetrain", "Fuel Type"])
 
-            car_info = get_info_from_json(url=url)
-            if car_info:
-                # Write the row with additional columns
-                writer.writerow(row + [
-                    car_info.get("Make", ""),
-                    car_info.get("Model", ""),
-                    car_info.get("Kilometres", ""),
-                    car_info.get("Status", ""),
-                    car_info.get("Trim", ""),
-                    car_info.get("Body Type", ""),
-                    car_info.get("Engine", ""),
-                    car_info.get("Cylinder", ""),
-                    car_info.get("Transmission", ""),
-                    car_info.get("Drivetrain", ""),
-                    car_info.get("Fuel Type", ""),
-                ])
-            else:
-                # Write the row with empty additional columns
-                writer.writerow(row + [""] * 11)
+            # Process each row
+            for row in reader:
+                url = row[0]  # Assuming the first column contains the link
+                print(f"Processing: {url}")
+
+                car_info = get_info_from_json(url=url)
+                if car_info:
+                    # Write the row with additional columns
+                    writer.writerow(row + [
+                        car_info.get("Make", ""),
+                        car_info.get("Model", ""),
+                        car_info.get("Kilometres", ""),
+                        car_info.get("Status", ""),
+                        car_info.get("Trim", ""),
+                        car_info.get("Body Type", ""),
+                        car_info.get("Engine", ""),
+                        car_info.get("Cylinder", ""),
+                        car_info.get("Transmission", ""),
+                        car_info.get("Drivetrain", ""),
+                        car_info.get("Fuel Type", ""),
+                    ])
+                else:
+                    # Write the row with empty additional columns
+                    writer.writerow(row + [""] * 11)
+    except FileNotFoundError:
+        print(f"Error: {input_csv} not found.")
 
 
 # Example usage
