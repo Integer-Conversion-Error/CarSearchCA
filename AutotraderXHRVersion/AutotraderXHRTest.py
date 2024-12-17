@@ -60,7 +60,7 @@ def get_info_from_json(make="Ford", model="Fusion", url="https://www.autotrader.
         return None
 
 
-def process_csv(input_csv="results.csv", output_csv="processed_results.csv"):
+def process_csv(input_csv="results.csv", output_csv="results.csv"):
     """
     Reads a CSV of links, fetches car information for each link, and writes the results to a new CSV.
 

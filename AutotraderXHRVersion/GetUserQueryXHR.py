@@ -1,339 +1,240 @@
-import CarDataCollector
+import requests
+import json
+import csv
+from AutotraderXHRTest import process_csv
 
-def read_query_file(file_path="querydetails.txt"):
-    with open(file_path, "r") as file:
-        lines = file.readlines()
+def get_user_responses():
+    """
+    Prompt the user for responses to populate the payload items.
 
-    # Initialize variables to extract details
-    make = ""
-    model = ""
-    price_min = 0
-    price_max = 0
-    max_pages = 0
-    max_distance = 0
-    min_mileage = 0
-    max_mileage = 0
-    min_year = 0
-    max_year = 0
-    keywords = []
-
-    # Parse each line
-    for line in lines:
-        if line.startswith("Make:"):
-            make = line.split(":", 1)[1].strip()
-        elif line.startswith("Model:"):
-            model = line.split(":", 1)[1].strip()
-        elif line.startswith("Price Min:"):
-            price_min = int(float(line.split("$")[1].strip()))
-        elif line.startswith("Price Max:"):
-            price_max = int(float(line.split("$")[1].strip()))
-        elif line.startswith("Max Pages:"):
-            max_pages = int(line.split(":")[1].strip())
-        elif line.startswith("Distance:"):
-            max_distance = int(line.split(":")[1].strip())
-        elif line.startswith("Min Mileage:"):
-            min_mileage = int(line.split(":")[1].strip())
-        elif line.startswith("Max Mileage:"):
-            max_mileage = int(line.split(":")[1].strip())
-        elif line.startswith("Min Year:"):
-            min_year = int(line.split(":")[1].strip())
-        elif line.startswith("Max Year:"):
-            max_year = int(line.split(":")[1].strip())
-        elif line.startswith("Keywords:"):
-            keywords = [kw.strip() for kw in line.split(":", 1)[1].strip().split(",")]
-
-    allfilters = {
-    'make': make,                      # Car make
-    'model': model,                    # Car model
-    'price_min': price_min,            # Minimum price
-    'price_max': price_max,            # Maximum price
-    'max_pages': max_pages,            # Maximum number of pages to search
-    'max_distance': max_distance,      # Maximum distance for the search
-    'exclusions': keywords,          # Keywords to exclude
-    'min_mileage': min_mileage,        # Minimum mileage
-    'max_mileage': max_mileage,        # Maximum mileage
-    'min_year': min_year,              # Minimum year
-    'max_year': max_year               # Maximum year
+    Returns:
+        dict: A dictionary containing user inputs for the payload.
+    """
+    payload = {
+        "Address": input("Enter Address (default: null): ") or "Kanata, ON",
+        "Make": input("Enter Make (default: null): ") or None,
+        "Model": input("Enter Model (default: null): ") or None,
+        "PriceMin": input("Enter Minimum Price (default: null): ") or None,
+        "PriceMax": input("Enter Maximum Price (default: null): ") or None,
+        "Skip": 0,
+        "Top": 15,
+        "IsNew": "True",
+        "IsUsed": "True",
+        "WithPhotos": "True",
+        "YearMax": input("Enter Maximum Year (default: null): ") or None,
+        "YearMin": input("Enter Minimum Year (default: null): ") or None,
+        "micrositeType": 1,  # This field is fixed
     }
-    return make, model, price_min, price_max, max_pages, max_distance, keywords, min_mileage, max_mileage, min_year, max_year
 
-
-
-# # Example usage
-# if __name__ == "__main__":
-#     result = read_query_file()
-#     print(result)
-
-
-def create_query_file():
-    # Open a new file named querydetails.txt for writing
-    with open("querydetails.txt", "w") as file:
-        # Get car make
-        all_makes = CarDataCollector.get_makes_from_autotrader()
-        print(all_makes)
-        make = ""
-        model = -2
-        while make == "" or make not in all_makes: 
-            make = input("Enter make of car: ")
-            if make not in all_makes and make != "":
-                make = input("Please enter a valid car maker: ")
-        file.write(f"Make: {make}\n")
-        
-        # Get car model
-        modelsformake = CarDataCollector.get_models_from_autotrader(make)
-        for index, modelformake in enumerate(modelsformake):
-            print(f"{index}: {modelformake}")
-        while True:
+    # Convert numerical inputs or booleans
+    for key in ["PriceMin", "PriceMax", "Skip", "Top", "YearMax", "YearMin"]:
+        if payload[key] is not None:
             try:
-                model = int(input("Select model ID of car: ").strip())
-                if 0 <= model < len(modelsformake):
-                    model = modelsformake[model]
-                    break
-                else:
-                    print(f"Invalid index. Please choose a number between 0 and {len(modelsformake) - 1}.")
+                payload[key] = int(payload[key])
             except ValueError:
-                print("Invalid input. Please enter a valid input.")
-        file.write(f"Model: {model}\n")
-        
-        # Get and validate minimum price
-        while True:
-            try:
-                price_min = float(input("Enter min price ($): ").strip())
-                if price_min < 0:
-                    print("Minimum price cannot be negative. Try again.")
-                else:
-                    break
-            except ValueError:
-                print("Invalid input. Please enter a valid numeric value for min price.")
-        file.write(f"Price Min: ${price_min:.2f}\n")
-        
-        # Get and validate maximum price
-        while True:
-            try:
-                price_max = float(input("Enter max price ($): ").strip())
-                if price_max < price_min:
-                    print("Maximum price cannot be less than minimum price. Try again.")
-                else:
-                    break
-            except ValueError:
-                print("Invalid input. Please enter a valid numeric value for max price.")
-        file.write(f"Price Max: ${price_max:.2f}\n")
-        
-        # Get and validate max_pages
-        while True:
-            try:
-                max_pages = int(input("Enter amount of pages to search (each page is 15 listings, enter -1 for unlimited): ").strip())
-                if max_pages < -1:
-                    print("Invalid input. Pages cannot be less than -1. Try again.")
-                else:
-                    if max_pages == -1:
-                        max_pages = 999
-                    break
-            except ValueError:
-                print("Invalid input. Please enter a valid integer for pages.")
-        file.write(f"Max Pages: {max_pages}\n")
+                payload[key] = None
 
-        # Get and validate max_distance
-        while True:
-            try:
-                max_distance = int(input("Enter maximum distance from Kanata (Enter -1 for nationwide search): "))
-                if max_distance < -1 or max_distance == 0:
-                    print("Invalid input. Distance cannot be less than -1 or equal to 0. Try again.")
-                else:
-                    break
-            except ValueError:
-                print("Invalid input. Please enter a valid numeric value.")
-        file.write(f"Distance: {max_distance}\n")
+    for key in ["IsNew", "IsUsed", "WithPhotos"]:
+        if payload[key] is not None:
+            payload[key] = payload[key].strip().lower() == "true"
 
-        # Get and validate minimum mileage
-        while True:
-            try:
-                min_mileage = int(input("Enter minimum mileage (in KMs): "))
-                if min_mileage < 0:
-                    print("Invalid input. Mileage cannot be negative. Try again.")
-                else:
-                    break
-            except ValueError:
-                print("Invalid input. Please enter a valid integer.")
-        file.write(f"Min Mileage: {min_mileage}\n")
+    return payload
 
-        # Get and validate maximum mileage
-        while True:
-            try:
-                max_mileage = int(input("Enter maximum mileage (in KMs): "))
-                if max_mileage < min_mileage:
-                    print("Invalid input. Max mileage cannot be less than min mileage. Try again.")
-                else:
-                    break
-            except ValueError:
-                print("Invalid input. Please enter a valid integer.")
-        file.write(f"Max Mileage: {max_mileage}\n")
+def save_payload_to_file(payload):
+    """
+    Save the payload to a file in JSON format.
 
-        # Get and validate minimum year
-        while True:
-            try:
-                min_year = int(input("Enter minimum year: "))
-                if min_year < 1900:  # Assuming cars older than 1900 are not relevant
-                    print("Invalid input. Year cannot be before 1900. Try again.")
-                else:
-                    break
-            except ValueError:
-                print("Invalid input. Please enter a valid year.")
-        file.write(f"Min Year: {min_year}\n")
+    Args:
+        payload (dict): The payload to save.
+    """
+    filename = input("Enter the name of the file to save (with .txt extension): ")
+    with open(filename, "w", encoding="utf-8") as file:
+        json.dump(payload, file, indent=4)
+    print(f"Payload saved to {filename}")
 
-        # Get and validate maximum year
-        while True:
-            try:
-                max_year = int(input("Enter maximum year: "))
-                if max_year < min_year:
-                    print("Invalid input. Max year cannot be less than min year. Try again.")
-                else:
-                    break
-            except ValueError:
-                print("Invalid input. Please enter a valid year.")
-        file.write(f"Max Year: {max_year}\n")
+def read_payload_from_file():
+    """
+    Read a payload from a file in JSON format.
 
-        # Get keywords from user
-        keywords = get_keywords_from_user()
-        file.write(f"Keywords: {', '.join(keywords)}\n")
+    Returns:
+        dict: The payload read from the file.
+    """
+    filename = input("Enter the name of the file to read (with .txt extension): ")
+    try:
+        with open(filename, "r", encoding="utf-8") as file:
+            payload = json.load(file)
+            print(f"Payload successfully loaded from {filename}")
+            return payload
+    except FileNotFoundError:
+        print(f"File {filename} not found.")
+        return None
 
-        print("Query details successfully saved to 'querydetails.txt'.")
+def fetch_autotrader_data(params):
+    """
+    Continuously fetch data from AutoTrader.ca API with lazy loading (pagination).
 
-        allfilters = {
-        'make': make,                      # Car make
-        'model': model,                    # Car model
-        'price_min': price_min,            # Minimum price
-        'price_max': price_max,            # Maximum price
-        'max_pages': max_pages,            # Maximum number of pages to search
-        'max_distance': max_distance,      # Maximum distance for the search
-        'exclusions': [],          # Keywords to exclude
-        'min_mileage': min_mileage,        # Minimum mileage
-        'max_mileage': max_mileage,        # Maximum mileage
-        'min_year': min_year,              # Minimum year
-        'max_year': max_year               # Maximum year
+    Args:
+        params (dict): Dictionary containing search parameters with default values.
+
+    Returns:
+        list: Combined list of all results from all pages.
+    """
+    # Set default values for parameters
+    default_params = {
+        "Make": "",
+        "Model": "",
+        "PriceMin": 0,
+        "PriceMax": 99999,
+        "YearMin": "1950",
+        "YearMax": "2025",
+        "Top": 15,
+        "Address": "Kanata, ON",
+        "IsNew": True,
+        "IsUsed": True,
+        "WithPhotos": True,
+    }
+
+    # Update default values with provided parameters
+    params = {**default_params, **params}
+
+    url = "https://www.autotrader.ca/Refinement/Search"
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    }
+
+    all_results = []
+    current_page = 1
+    max_page = None
+    skip = 0
+
+    while True:
+        payload = {
+            "Address": params["Address"],
+            "Make": params["Make"],
+            "Model": params["Model"],
+            "PriceMin": params["PriceMin"],
+            "PriceMax": params["PriceMax"],
+            "Skip": skip,
+            "Top": params["Top"],
+            "IsNew": params["IsNew"],
+            "IsUsed": params["IsUsed"],
+            "WithPhotos": params["WithPhotos"],
+            "YearMax": params["YearMax"],
+            "YearMin": params["YearMin"],
+            "micrositeType": 1,
         }
 
+        try:
+            response = requests.post(url, headers=headers, json=payload)
+            response.raise_for_status()
+            json_response = response.json()
+            search_results_json = json_response.get("SearchResultsDataJson", "")
+            if not search_results_json:
+                print("No more data available.")
+                break
 
-        return make, model, int(price_min), int(price_max), max_pages, max_distance, keywords, min_mileage, max_mileage, min_year, max_year
+            search_results = json.loads(search_results_json)
+            all_results.extend(search_results.get("compositeIdUrls", []))
 
+            current_page = search_results.get("currentPage", 0)
+            max_page = search_results.get("maxPage", current_page)
 
-def get_keywords_from_user():
-    """
-    Allows the user to input keywords and manage them through a menu system.
-    Returns a list of keywords.
-    """
-    keywords = []
+            print(f"Fetched page {current_page} of {max_page}...")
 
-    print("Enter keywords one by one. Press -1 to stop entering keywords.")
-    while True:
-        keyword = input("Enter a keyword: ").strip()
-        if keyword == '-1':
+            if current_page >= max_page:
+                print("Reached the last page.")
+                break
+
+            skip += params["Top"]
+
+        except requests.exceptions.RequestException as e:
+            print(f"An error occurred: {e}")
             break
-        if keyword:
-            keywords.append(keyword)
+        except json.JSONDecodeError as e:
+            print(f"Failed to decode SearchResultsDataJson: {e}")
+            break
 
+    return all_results
+
+def remove_duplicates(arr):
+    """
+    Removes duplicates from an array while maintaining the order of elements.
+
+    Args:
+        arr (list): The input array.
+
+    Returns:
+        list: A new array with duplicates removed.
+    """
+    seen = set()
+    result = []
+    for item in arr:
+        if item not in seen:
+            result.append("https://www.autotrader.ca" + item)
+            seen.add(item)
+    return result
+
+def save_to_csv(data, filename="results.csv"):
+    """
+    Saves fetched data by processing it using external CSV handling function.
+
+    Args:
+        data (list): List of links to save.
+        filename (str): Name of the CSV file.
+    """
+    with open(filename, mode="w", newline="", encoding="utf-8") as file:
+        writer = csv.writer(file)
+        writer.writerow(["Link"])  # Write the header
+        for link in data:
+            writer.writerow([link])
+    print(f"Results saved to {filename}")
+
+    print("Processing CSV to fetch car details...")
+    process_csv(input_csv=filename, output_csv=filename)
+
+def main():
+    """
+    Main function to interact with the user.
+    """
+    print("Welcome to the Payload and AutoTrader Manager!")
     while True:
-        print("\nCurrent keywords:", ", ".join(keywords) if keywords else "None")
-        print("Menu:")
-        print("1. Add a keyword")
-        print("2. Remove a keyword")
-        print("3. Finish")
+        print("\nOptions:")
+        print("1. Create a new payload")
+        print("2. Save a payload to a file")
+        print("3. Load a payload from a file")
+        print("4. Fetch AutoTrader data")
+        print("5. Exit")
 
-        choice = input("Choose an option (1, 2, or 3): ").strip()
-        if choice == '1':
-            new_keyword = input("Enter a new keyword to add: ").strip()
-            if new_keyword:
-                keywords.append(new_keyword)
-        elif choice == '2':
-            keyword_to_remove = input("Enter a keyword to remove: ").strip()
-            if keyword_to_remove in keywords:
-                keywords.remove(keyword_to_remove)
+        choice = input("Enter your choice: ")
+        if choice == "1":
+            payload = get_user_responses()
+            print("Payload created:", payload)
+        elif choice == "2":
+            if 'payload' in locals() and payload:
+                save_payload_to_file(payload)
             else:
-                print("Keyword not found.")
-        elif choice == '3':
+                print("No payload found. Please create one first.")
+        elif choice == "3":
+            loaded_payload = read_payload_from_file()
+            if loaded_payload:
+                payload = loaded_payload
+                print("Loaded payload:", payload)
+        elif choice == "4":
+            if 'payload' in locals() and payload:
+                results = fetch_autotrader_data(payload)
+                results = remove_duplicates(results)
+                save_to_csv(results)
+                print(f"Total Results Fetched: {len(results)}")
+            else:
+                print("No payload found. Please create or load one first.")
+        elif choice == "5":
+            print("Exiting the Payload Manager. Goodbye!")
             break
         else:
             print("Invalid choice. Please try again.")
 
-    return keywords
-
-def use_previous_or_new_query():
-    """
-    Prompts the user to use the previous query or create a new query.
-
-    Returns:
-        tuple: Contains make (str), model (str), price_min (int), price_max (int),
-               max_pages (int), max_distance (float), and keywords (list).
-    """
-    try:
-        # Try to read the previous query file
-        previous_query = read_query_file()
-        print("\nPrevious Query Details:")
-        print(f"Make: {previous_query[0]}")
-        print(f"Model: {previous_query[1]}")
-        print(f"Price Min: ${previous_query[2]}")
-        print(f"Price Max: ${previous_query[3]}")
-        print(f"Mileage Min: ${previous_query[7]}")
-        print(f"Mileage Max: ${previous_query[8]}")
-        print(f"Max Pages: {previous_query[4]}")
-        print(f"Distance: {previous_query[5]} km")
-        print(f"Keywords: {', '.join(previous_query[6])}")
-    except FileNotFoundError:
-        # If no previous query file exists
-        print("\nNo previous query found. You will need to create a new query.")
-        create_query_file()
-        return read_query_file()
-
-    # Prompt the user to use the previous query or create a new one
-    while True:
-        choice = input("\nDo you want to use the previous query? (yes/no): ").strip().lower()
-        if choice == "yes":
-            print("Using the previous query.")
-            return previous_query
-        elif choice == "no":
-            print("Creating a new query.")
-            create_query_file()
-            return read_query_file()
-        else:
-            print("Invalid input. Please enter 'yes' or 'no'.")
-
-def main():
-    make, model, price_min, price_max, max_pages, max_distance, exclusions, min_mileage, max_mileage, min_year, max_year = use_previous_or_new_query()
-    allfilters = {
-    'make': make,                      # Car make
-    'model': model,                    # Car model
-    'price_min': price_min,            # Minimum price
-    'price_max': price_max,            # Maximum price
-    'max_pages': max_pages,            # Maximum number of pages to search
-    'max_distance': max_distance,      # Maximum distance for the search
-    'exclusions': exclusions,          # Keywords to exclude
-    'min_mileage': min_mileage,        # Minimum mileage
-    'max_mileage': max_mileage,        # Maximum mileage
-    'min_year': min_year,              # Minimum year
-    'max_year': max_year               # Maximum year
-    }
-    # Replace spaces with URL encoding and convert to lowercase
-    make_encoded = make.replace(" ", "%20").lower()
-    model_encoded = model.replace(" ", "%20").lower()
-
-    # Construct the AutoTrader URL with the new parameters
-    modified_url = (
-        f"https://www.autotrader.ca/cars/{make_encoded}/{model_encoded}/?"
-        f"rcp=15&rcs=0&srt=35&"
-        f"yRng={min_year}%2C{max_year}&"  # Year range
-        f"pRng={price_min}%2C{price_max}&"   # Price range
-        f"oRng={min_mileage}%2C{max_mileage}&"  # Mileage range
-        f"prx={max_distance}&"             # Maximum distance
-        f"loc=Kanata%2C%20ON&"
-        f"hprc=True&wcp=True&sts=New-Used&inMarket=advancedSearch"
-    )
-
-    print("Search URL: ", modified_url)
-    print("Exclusion Keywords: ", exclusions)
-
-    return modified_url, max_pages, exclusions, allfilters
-
-
-while True:
+if __name__ == "__main__":
     main()
-    break

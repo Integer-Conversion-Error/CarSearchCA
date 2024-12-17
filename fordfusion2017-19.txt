@@ -1,0 +1,15 @@
+{
+    "Address": "Kanata, ON",
+    "Make": "Ford",
+    "Model": "Fusion",
+    "PriceMin": 12000,
+    "PriceMax": 17000,
+    "Skip": 0,
+    "Top": 15,
+    "IsNew": true,
+    "IsUsed": true,
+    "WithPhotos": true,
+    "YearMax": 2019,
+    "YearMin": 2017,
+    "micrositeType": 1
+}
